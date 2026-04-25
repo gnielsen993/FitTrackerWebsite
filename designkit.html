@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DesignKit — The system underneath FitnessTracker.</title>
+  <meta name="description" content="DesignKit is the shared design language behind FitnessTracker — tokens, themeable components, and a 34-preset theme catalog with full user customization." />
+  <link rel="icon" href="assets/images/icon-1024.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&display=swap" />
+  <link rel="stylesheet" href="assets/styles.css" />
+  <script src="assets/config.js" defer></script>
+  <script src="assets/theme-demo.js" defer></script>
+</head>
+<body>
+
+  <header class="masthead">
+    <div class="masthead-inner">
+      <a class="brand" href="index.html" aria-label="FitnessTracker home">
+        <span class="brand-mark">Fitness—</span>
+        <span class="brand-mark">Tracker</span>
+        <span class="brand-meta">Vol. I · v<span data-cfg="appVersion">1.0</span></span>
+      </a>
+      <nav class="topnav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="designkit.html" aria-current="page">DesignKit</a>
+        <a href="updates.html">Updates</a>
+        <a href="press.html">Press</a>
+        <a href="support.html">Support</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="shell">
+
+    <!-- Mission -->
+    <section class="row section">
+      <aside class="rail">
+        <div class="rail-stack">
+          <span class="eyebrow">Appendix A</span>
+          <span class="eyebrow">DesignKit</span>
+          <span class="eyebrow">Swift Package</span>
+        </div>
+      </aside>
+      <div>
+        <h1>The system underneath.</h1>
+        <p class="lede">DesignKit is a Swift Package that defines one design language for the whole ecosystem — tokens, components, and presets. FitnessTracker is the first app shipping against it.</p>
+        <p>The contract is the tokens. Every color, type ramp, spacing step, corner radius, and motion curve is a named variable resolved at runtime. Components — <code>DKCard</code>, <code>DKButton</code>, <code>DKBadge</code>, <code>DKThemePicker</code> — never hardcode anything; they read from the contract. Switch a preset and every screen, every chart, every widget reflows in lockstep. No stray hex values. No drifted padding. No surprises.</p>
+        <p>That's how one team ships apps that feel like one premium product instead of a kit-bashed family. Tokens are the contract. The apps are the voices.</p>
+        <p>It's also the customization engine. The catalog ships thirty-four hand-tuned presets across six categories — Classic, Sweet, Bright, Soft, Moody, Loud — and a four-anchor override lets a user define their own theme. Pick four colors; DesignKit extrapolates the rest with contrast checks baked in, so a wild theme still has legible text and readable charts.</p>
+      </div>
+    </section>
+
+    <!-- Live demo -->
+    <section class="row section">
+      <aside class="rail">
+        <div class="rail-stack">
+          <span class="eyebrow">Live Preview</span>
+          <span class="eyebrow">7 Presets</span>
+          <span class="eyebrow">Light · Dark</span>
+        </div>
+      </aside>
+      <div>
+        <h2>Pick a theme. Watch it land.</h2>
+        <p class="lede">A curated slice of the catalog — leading with the loud ones. Same card, same button, same badge. Different identity each time, driven entirely by tokens.</p>
+
+        <div class="dk-demo" aria-live="polite">
+          <div class="dk-controls">
+            <div class="dk-swatches" role="group" aria-label="Theme presets"></div>
+            <div class="dk-mode" role="group" aria-label="Color scheme">
+              <button type="button" data-mode="light" aria-pressed="true">Light</button>
+              <button type="button" data-mode="dark" aria-pressed="false">Dark</button>
+            </div>
+            <p class="eyebrow" id="dk-current">Vapor · Loud · Light</p>
+          </div>
+
+          <div class="dk-card">
+            <p class="dk-card-eyebrow">Today · Push Day</p>
+            <h4>Bench Press — 185 × 5</h4>
+            <p>Three sets logged. Rest timer running. The set you just did is a personal record.</p>
+            <div class="dk-card-row">
+              <span class="dk-badge">PR ✓</span>
+              <button class="dk-button" type="button">Log Next Set</button>
+            </div>
+          </div>
+
+          <div class="dk-tokens">
+            <div class="dk-token" id="token-bg">
+              <span class="dk-token-label">Background</span>
+              <span class="dk-token-value">
+                <span class="dk-token-chip"></span>
+                <span class="dk-token-hex">#FAF7F0</span>
+              </span>
+            </div>
+            <div class="dk-token" id="token-surface">
+              <span class="dk-token-label">Surface</span>
+              <span class="dk-token-value">
+                <span class="dk-token-chip"></span>
+                <span class="dk-token-hex">#FFFFFF</span>
+              </span>
+            </div>
+            <div class="dk-token" id="token-accent">
+              <span class="dk-token-label">Accent</span>
+              <span class="dk-token-value">
+                <span class="dk-token-chip"></span>
+                <span class="dk-token-hex">#0F766E</span>
+              </span>
+            </div>
+            <div class="dk-token" id="token-text">
+              <span class="dk-token-label">Text</span>
+              <span class="dk-token-value">
+                <span class="dk-token-chip"></span>
+                <span class="dk-token-hex">#0F172A</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Catalog depth -->
+    <section class="row section">
+      <aside class="rail">
+        <div class="rail-stack">
+          <span class="eyebrow">Full Catalog</span>
+          <span class="eyebrow">34 Presets</span>
+          <span class="eyebrow">6 Categories</span>
+        </div>
+      </aside>
+      <div>
+        <h2>The catalog goes deeper.</h2>
+        <p class="lede">Seven presets in the preview above. Thirty-four in the full catalog, sorted into six personalities.</p>
+        <p><strong>Classic</strong> — Forest, Navy, Maroon, Walnut, Stone. Quiet anchors. <strong>Sweet</strong> — Sakura, Bubblegum, Mint. Soft and warm. <strong>Bright</strong> — Solar, Citrus, Lagoon. High-contrast, high-energy. <strong>Soft</strong> — Cream, Linen, Mist. Low-contrast and easy on the eyes. <strong>Moody</strong> — Nord, Dracula, Gruvbox, Carbon, Midnight. Editor-grade dark. <strong>Loud</strong> — Vapor, Synth, Hazard, Acid. Themes that pick a fight with restraint.</p>
+        <p>Beyond the catalog, the four-anchor override lets users build their own. Pick a background, a surface, an accent, and a text color — DesignKit derives the rest with contrast checks, so even a chaotic theme stays legible.</p>
+        <p>DesignKit ships inside FitnessTracker first. Follow the app to follow the system.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="colophon">
+    <div class="colophon-inner">
+      <span>© <span data-cfg="copyrightYear">2026</span> <span data-cfg="copyrightHolder">Lauterstar</span></span>
+      <ul>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="terms.html">Terms</a></li>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="press.html">Press</a></li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+</html>

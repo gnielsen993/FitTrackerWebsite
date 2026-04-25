@@ -1,0 +1,588 @@
+/* ==========================================================================
+   FitnessTracker Website — Editorial Heritage
+   No frameworks. CSS variables only. No inline styles anywhere.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. Tokens
+   -------------------------------------------------------------------------- */
+:root {
+  /* Color — light (FitnessTracker "forest" preset, brand-locked) */
+  --bg: #FAF7F0;
+  --surface: #FFFFFF;
+  --ink: #1C1B1A;
+  --ink-soft: #5A5550;
+  --ink-faint: #8A857C;
+  --rule: #E5DFD3;
+  --accent: #2F5D3A;
+  --accent-soft: #2F5D3A1A;
+
+  /* Spacing */
+  --s-xs: 4px;
+  --s-s: 8px;
+  --s-m: 12px;
+  --s-l: 16px;
+  --s-xl: 24px;
+  --s-xxl: 48px;
+  --s-3xl: 96px;
+
+  /* Type */
+  --serif: "Fraunces", Georgia, "Times New Roman", serif;
+  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  --mono: ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  /* Layout */
+  --max-w: 1100px;
+  --rail-w: 180px;
+  --rule-thin: 1px solid var(--rule);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #131313;
+    --surface: #1A1A1A;
+    --ink: #F4ECD8;
+    --ink-soft: #A8A095;
+    --ink-faint: #6B6660;
+    --rule: #2A2825;
+    --accent: #14B8A6;
+    --accent-soft: #14B8A622;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   2. Reset (minimal)
+   -------------------------------------------------------------------------- */
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+img { max-width: 100%; height: auto; display: block; }
+a {
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1px solid var(--rule);
+  transition: border-color 120ms ease, color 120ms ease;
+}
+a:hover { border-bottom-color: var(--accent); color: var(--accent); }
+button { font: inherit; }
+
+/* --------------------------------------------------------------------------
+   3. Typography
+   -------------------------------------------------------------------------- */
+h1, h2, h3, .display {
+  font-family: var(--serif);
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  line-height: 1.15;
+  margin: 0;
+}
+h1, .display-xl {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 400;
+  font-style: italic;
+}
+h2, .display-l {
+  font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+}
+h3, .display-m {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+p { margin: 0 0 var(--s-l); }
+.lede {
+  font-family: var(--serif);
+  font-size: clamp(1.125rem, 1.5vw, 1.375rem);
+  line-height: 1.55;
+  color: var(--ink-soft);
+}
+
+/* Eyebrow / mono labels */
+.eyebrow {
+  font-family: var(--mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  margin: 0 0 var(--s-s);
+}
+
+/* --------------------------------------------------------------------------
+   4. Layout — Editorial two-column
+   -------------------------------------------------------------------------- */
+.shell {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: var(--s-xl) var(--s-l);
+}
+
+@media (min-width: 900px) {
+  .shell { padding: var(--s-xxl) var(--s-xl); }
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--s-xl);
+}
+@media (min-width: 900px) {
+  .row {
+    grid-template-columns: var(--rail-w) 1fr;
+    gap: var(--s-xxl);
+  }
+}
+
+.rail {
+  border-bottom: var(--rule-thin);
+  padding-bottom: var(--s-m);
+}
+@media (min-width: 900px) {
+  .rail {
+    border-bottom: 0;
+    border-right: var(--rule-thin);
+    padding-bottom: 0;
+    padding-right: var(--s-xl);
+  }
+}
+
+.rail-stack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-xs);
+}
+
+/* Section spacing */
+.section { padding-block: var(--s-xxl); }
+.section + .section { border-top: var(--rule-thin); }
+@media (min-width: 900px) {
+  .section { padding-block: var(--s-3xl); }
+}
+
+/* --------------------------------------------------------------------------
+   5. Masthead
+   -------------------------------------------------------------------------- */
+.masthead {
+  border-bottom: var(--rule-thin);
+  padding: var(--s-l) var(--s-l);
+}
+@media (min-width: 900px) {
+  .masthead { padding: var(--s-xl) var(--s-xl); }
+}
+
+.masthead-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--s-xl);
+  flex-wrap: wrap;
+}
+
+.brand {
+  font-family: var(--serif);
+  font-size: 1.125rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.05;
+  border: 0;
+  display: inline-flex;
+  flex-direction: column;
+}
+.brand-mark { font-style: italic; }
+.brand-meta {
+  font-family: var(--mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  margin-top: var(--s-xs);
+}
+
+nav.topnav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-l);
+}
+nav.topnav a {
+  border: 0;
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  padding-bottom: 2px;
+  border-bottom: 1px solid transparent;
+}
+nav.topnav a:hover,
+nav.topnav a[aria-current="page"] {
+  color: var(--ink);
+  border-bottom-color: var(--ink);
+}
+
+/* --------------------------------------------------------------------------
+   6. Hero
+   -------------------------------------------------------------------------- */
+.hero h1 {
+  margin-bottom: var(--s-l);
+  max-width: 18ch;
+}
+.hero .lede { max-width: 38ch; }
+.hero-cta {
+  display: inline-block;
+  margin-top: var(--s-xl);
+  font-family: var(--mono);
+  font-size: 0.8125rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink);
+  border: 0;
+  border-top: 1px solid var(--ink);
+  padding-top: var(--s-s);
+}
+.hero-cta::before {
+  content: "── ";
+  color: var(--ink-faint);
+}
+.hero-cta:hover { color: var(--accent); border-top-color: var(--accent); }
+
+/* --------------------------------------------------------------------------
+   7. Feature dispatches
+   -------------------------------------------------------------------------- */
+.dispatch + .dispatch {
+  margin-top: var(--s-xxl);
+  padding-top: var(--s-xxl);
+  border-top: var(--rule-thin);
+}
+.dispatch h3 {
+  font-family: var(--serif);
+  font-size: 1.625rem;
+  font-weight: 400;
+  margin-bottom: var(--s-m);
+  letter-spacing: -0.01em;
+}
+.dispatch-num {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  margin-bottom: var(--s-s);
+}
+.dispatch p { color: var(--ink-soft); max-width: 56ch; }
+
+/* --------------------------------------------------------------------------
+   8. Pull quote
+   -------------------------------------------------------------------------- */
+.pullquote {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: clamp(1.75rem, 3.5vw, 2.75rem);
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  max-width: 22ch;
+  border: 0;
+  padding: 0;
+  color: var(--ink);
+}
+.pullquote::before, .pullquote::after { color: var(--ink-faint); }
+.pullquote-cite {
+  display: block;
+  margin-top: var(--s-l);
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  font-style: normal;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+/* --------------------------------------------------------------------------
+   9. Cross-link blocks (DesignKit teaser, etc.)
+   -------------------------------------------------------------------------- */
+.crosslink {
+  display: block;
+  border: 0;
+  padding: var(--s-xl) 0;
+}
+.crosslink-arrow {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  margin-top: var(--s-s);
+}
+.crosslink:hover .crosslink-arrow,
+.crosslink:hover h3 { color: var(--accent); }
+
+/* --------------------------------------------------------------------------
+   10. Footer
+   -------------------------------------------------------------------------- */
+footer.colophon {
+  border-top: var(--rule-thin);
+  padding: var(--s-xl) var(--s-l);
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+footer.colophon-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--s-l);
+}
+footer.colophon a { color: var(--ink-soft); border: 0; }
+footer.colophon a:hover { color: var(--ink); }
+footer.colophon ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-l);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* --------------------------------------------------------------------------
+   11. DesignKit demo (designkit.html only)
+   -------------------------------------------------------------------------- */
+.dk-demo {
+  /* Scoped tokens — the theme switcher writes only to this scope. */
+  --dk-bg: #FAF7F0;
+  --dk-surface: #FFFFFF;
+  --dk-accent: #2F5D3A;
+  --dk-text: #1C1B1A;
+  --dk-rule: rgba(0,0,0,0.08);
+
+  background: var(--dk-bg);
+  color: var(--dk-text);
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  padding: var(--s-xl);
+  transition: background 200ms ease, color 200ms ease;
+}
+
+.dk-controls {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-l);
+  margin-bottom: var(--s-xl);
+}
+
+.dk-swatches {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-s);
+}
+
+.dk-swatch {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-s);
+  padding: var(--s-s) var(--s-m);
+  background: transparent;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  color: var(--ink-soft);
+  font-family: var(--mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: border-color 120ms ease, color 120ms ease;
+}
+.dk-swatch[aria-pressed="true"] {
+  border-color: var(--ink);
+  color: var(--ink);
+}
+.dk-swatch:hover { color: var(--ink); }
+.dk-swatch-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dk-mode {
+  display: inline-flex;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  overflow: hidden;
+  align-self: flex-start;
+}
+.dk-mode button {
+  background: transparent;
+  border: 0;
+  padding: var(--s-s) var(--s-l);
+  font-family: var(--mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  cursor: pointer;
+}
+.dk-mode button[aria-pressed="true"] {
+  background: var(--ink);
+  color: var(--bg);
+}
+
+/* Demo card — mimics DKCard */
+.dk-card {
+  background: var(--dk-surface);
+  color: var(--dk-text);
+  border: 1px solid var(--dk-rule);
+  border-radius: 16px;
+  padding: 24px;
+  max-width: 360px;
+  margin-top: var(--s-l);
+  transition: background 200ms ease, color 200ms ease, border-color 200ms ease;
+}
+.dk-card-eyebrow {
+  font-family: var(--mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  opacity: 0.55;
+  margin-bottom: 8px;
+}
+.dk-card h4 {
+  font-family: var(--serif);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 0 8px;
+}
+.dk-card p {
+  font-family: var(--sans);
+  font-size: 0.9375rem;
+  margin: 0 0 16px;
+  opacity: 0.75;
+}
+.dk-card-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.dk-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 12px;
+  background: var(--dk-accent);
+  color: var(--dk-surface);
+  border-radius: 999px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  font-family: var(--sans);
+  opacity: 0.92;
+}
+.dk-button {
+  background: var(--dk-accent);
+  color: var(--dk-surface);
+  border: 0;
+  border-radius: 14px;
+  padding: 12px 18px;
+  min-height: 44px;
+  font-family: var(--sans);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.dk-tokens {
+  margin-top: var(--s-xl);
+  border-top: 1px solid var(--rule);
+  padding-top: var(--s-l);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: var(--s-m);
+}
+.dk-token {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+}
+.dk-token-label {
+  display: block;
+  color: var(--ink-faint);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-size: 0.625rem;
+  margin-bottom: 2px;
+}
+.dk-token-value {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-s);
+  color: var(--ink-soft);
+}
+.dk-token-chip {
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+  border: 1px solid var(--rule);
+  display: inline-block;
+}
+
+/* --------------------------------------------------------------------------
+   12. Stub-page legal scaffolding
+   -------------------------------------------------------------------------- */
+.legal h2 {
+  margin-top: var(--s-xxl);
+  margin-bottom: var(--s-m);
+}
+.legal p { color: var(--ink-soft); max-width: 60ch; }
+.legal-todo {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  border: var(--rule-thin);
+  border-style: dashed;
+  padding: var(--s-m);
+  margin-bottom: var(--s-l);
+}
+
+/* --------------------------------------------------------------------------
+   13. Updates list
+   -------------------------------------------------------------------------- */
+.updates-list { list-style: none; padding: 0; margin: 0; }
+.updates-list li {
+  padding: var(--s-l) 0;
+  border-bottom: var(--rule-thin);
+}
+.updates-list li:last-child { border-bottom: 0; }
+.updates-list .ver {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  margin-right: var(--s-l);
+}
+
+/* --------------------------------------------------------------------------
+   14. Press & support
+   -------------------------------------------------------------------------- */
+.press-asset {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-l);
+  padding: var(--s-l);
+  border: var(--rule-thin);
+  border-radius: 4px;
+  margin-top: var(--s-l);
+}
+.press-asset img { width: 96px; height: 96px; border-radius: 18px; }
