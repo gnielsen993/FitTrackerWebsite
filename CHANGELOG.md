@@ -1,11 +1,22 @@
 # Changelog
 
-A running log of meaningful changes to the FitnessTracker website. The iOS app's own release log lives in the FitnessTracker repo at `Docs/releases/`. When a website change is tied to a specific app version, cross-reference the two.
+A running log of meaningful changes to the Stack website. The iOS app's own release log lives in the app repo at `Docs/releases/`. When a website change is tied to a specific app version, cross-reference the two.
 
 ## Unreleased
 
+### Changed
+- Replaced placeholder Privacy Policy and Terms of Service pages with concise Stack-specific legal copy covering local storage, optional iCloud sync, Apple Health writes, backup export/import, account deletion, App Store 9+ rating, exercise-risk disclaimers, and support contact.
+- Renamed public site/app references from FitnessTracker to Stack - Gym Tracker, with Stack as the display name in site chrome. Confirmed site support links use `support@lauterstar.com`.
+- Full visual redesign — ported the layout/component system from a sibling marketing site (Strada) and rebranded to FitnessTracker. Hero is now a split (text + phone-frame) with App Store CTA, features render as a 3-column dividing grid, screenshots live in a full-bleed drag-scroll carousel with chevron buttons, and content pages share a centered `.doc` layout. Typography moved to the system font stack (no Google Fonts). Forest accent (`#2F5D3A`) anchors light mode; lifted forest (`#6FA17C`) anchors dark mode via `prefers-color-scheme`.
+- `assets/styles.css` — rewritten end-to-end. New token names (`--bg`, `--surface`, `--accent`, `--text*`, `--border*`, `--space-*`, `--radius-*`), light+dark via `prefers-color-scheme`, no inline magic numbers.
+- All HTML pages — replaced masthead/rail layout with single-row nav + `.doc` body. Removed Fraunces font import.
+
 ### Added
-- Initial site scaffold — editorial heritage layout, Fraunces serif display + system sans body, warm cream / charcoal palette mapped from FitnessTracker's "Balanced Luxury" theme.
+- `assets/app.js` — drag-to-scroll + chevron buttons for the home-page screenshot carousel.
+- Phone-frame and screenshot placeholders ready to swap in real app shots once captured.
+
+### Initial scaffold (prior)
+- Editorial heritage layout, Fraunces serif display + system sans body, warm cream / charcoal palette mapped from FitnessTracker's "Balanced Luxury" theme.
 - Home (`index.html`) — masthead, hero, six numbered feature dispatches, pull quote, DesignKit teaser.
 - DesignKit page (`designkit.html`) — explainer of the token contract + component model, live theme switcher with 7 curated presets leading with the dramatic ones (vapor, solar, gruvbox, sakura, dracula, nord, cream, forest) so visitors see real bg/surface/text shifts instead of accent-only swaps, plus catalog-depth section listing all 34 presets across six categories.
 - Stub pages — Privacy, Terms, Updates, Support, Press — wired into nav with shared chrome.

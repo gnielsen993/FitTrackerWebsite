@@ -13,7 +13,7 @@ All project instructions, design conventions, and content rules are maintained i
 
 ## Design System
 
-Visual identity must echo the FitnessTracker iOS app's **Balanced Luxury** theme: warm cream (light) / charcoal (dark) backgrounds, accents constrained to forest, navy, maroon/oxblood, walnut, stone.
+Visual identity must echo the Stack iOS app's **Balanced Luxury** theme: warm cream (light) / charcoal (dark) backgrounds, accents constrained to forest, navy, maroon/oxblood, walnut, stone.
 
 - All colors as CSS custom properties on `:root`.
 - Light/dark via `prefers-color-scheme`.
@@ -29,7 +29,7 @@ Visual identity must echo the FitnessTracker iOS app's **Balanced Luxury** theme
 
 ## Release Log
 
-Significant changes go into `CHANGELOG.md`. Cross-reference the FitnessTracker app's `Docs/releases/v{version}.md` when a website change ships alongside an app release.
+Significant changes go into `CHANGELOG.md`. Cross-reference the Stack app's `Docs/releases/v{version}.md` when a website change ships alongside an app release.
 
 Log: visible content changes, legal edits, structural changes, app-coordinated changes.
 Skip: typos, minor CSS tweaks, asset reorganizations with no visible effect.

@@ -2,14 +2,15 @@
 // Edit here; pages read these values at runtime.
 
 window.SITE_CONFIG = Object.freeze({
-  appName: "FitnessTracker",
+  appName: "Stack - Gym Tracker",
+  displayName: "Stack",
   appVersion: "1.0",
   appStoreUrl: "#", // TODO: replace once approved
   supportEmail: "support@lauterstar.com",
   copyrightHolder: "Lauterstar",
   copyrightYear: 2026,
   bundleId: "com.lauterstar.fitnesstracker",
-  ecosystem: ["DesignKit", "HabitTracker", "FitnessTracker", "PantryPlanner"]
+  ecosystem: ["DesignKit", "HabitTracker", "Stack", "PantryPlanner"]
 });
 
 document.addEventListener("DOMContentLoaded", () => {

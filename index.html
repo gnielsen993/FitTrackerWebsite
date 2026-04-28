@@ -3,146 +3,236 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>FitnessTracker — Log sets in seconds. See the story unfold.</title>
-  <meta name="description" content="A local-first iOS workout app for lifters who train hard but have trouble sticking with tracking. Built with care, no accounts required." />
+
+  <title>Stack - Gym Tracker — Log sets in seconds. See the story unfold.</title>
+  <meta name="description" content="A local-first iOS workout app for split logging, muscle coverage, and workout visuals. No accounts. No tracking." />
+
+  <link rel="canonical" href="/" />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <meta name="theme-color" content="#FAF7F0" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#1C1B1A" media="(prefers-color-scheme: dark)" />
+
+  <meta property="og:site_name" content="Stack" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:title" content="Stack - Gym Tracker — Log sets in seconds. See the story unfold." />
+  <meta property="og:description" content="A local-first iOS workout app for split logging, muscle coverage, and workout visuals." />
+  <meta property="og:image" content="assets/images/icon-1024.png" />
+  <meta property="og:image:alt" content="Stack app icon" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Stack - Gym Tracker" />
+  <meta name="twitter:description" content="Log sets in seconds. See the story unfold." />
+  <meta name="twitter:image" content="assets/images/icon-1024.png" />
+
   <link rel="icon" href="assets/images/icon-1024.png" />
   <link rel="apple-touch-icon" href="assets/images/icon-1024.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&display=swap" />
+
   <link rel="stylesheet" href="assets/styles.css" />
-  <script src="assets/config.js" defer></script>
+  <script defer src="assets/config.js"></script>
+  <script defer src="assets/app.js"></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "name": "Lauterstar",
+        "url": "/"
+      },
+      {
+        "@type": "MobileApplication",
+        "name": "Stack - Gym Tracker",
+        "alternateName": "Stack",
+        "operatingSystem": "iOS",
+        "applicationCategory": "HealthApplication",
+        "description": "Local-first workout tracking with split logging, muscle coverage, and workout visuals.",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+      }
+    ]
+  }
+  </script>
 </head>
+
 <body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-  <header class="masthead">
-    <div class="masthead-inner">
-      <a class="brand" href="index.html" aria-label="FitnessTracker home">
-        <span class="brand-mark">Fitness—</span>
-        <span class="brand-mark">Tracker</span>
-        <span class="brand-meta">Vol. I · v<span data-cfg="appVersion">1.0</span></span>
+  <div class="container">
+
+    <header class="nav">
+      <a class="brand" href="index.html" aria-label="Stack home">
+        <img class="brand-logo" src="assets/images/icon-1024.png" alt="" aria-hidden="true" />
+        <span class="brand-name" data-cfg="displayName">Stack</span>
+        <span class="brand-meta">Vol. I &middot; v<span data-cfg="appVersion">1.0</span></span>
       </a>
-      <nav class="topnav" aria-label="Primary">
-        <a href="index.html" aria-current="page">Home</a>
-        <a href="designkit.html">DesignKit</a>
-        <a href="updates.html">Updates</a>
-        <a href="press.html">Press</a>
-        <a href="support.html">Support</a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a class="nav-link" href="index.html" aria-current="page">Home</a>
+        <a class="nav-link" href="designkit.html">DesignKit</a>
+        <a class="nav-link" href="updates.html">Updates</a>
+        <a class="nav-link" href="press.html">Press</a>
+        <a class="nav-link" href="support.html">Support</a>
       </nav>
-    </div>
-  </header>
+    </header>
 
-  <main class="shell">
+    <main id="main-content" class="hero">
 
-    <!-- Hero -->
-    <section class="row section hero" id="top">
-      <aside class="rail">
-        <div class="rail-stack">
-          <span class="eyebrow">Issue 01</span>
-          <span class="eyebrow">Health &amp; Fitness</span>
-          <span class="eyebrow">iOS · iPad</span>
+      <section>
+        <div class="hero-split">
+          <div class="hero-text">
+            <h1 class="h1">
+              Log sets in<br />seconds.<br />
+              See the story<br />unfold.
+            </h1>
+
+            <p class="sub">
+              An iOS app for lifters who train hard but have trouble sticking with tracking. Local-first, no accounts, no tracking — just your sets, your splits, and the progression they describe.
+            </p>
+
+            <div class="cta-row">
+              <a class="btn" href="#" data-cfg="appStoreUrl">Download on the App Store</a>
+              <a class="btn ghost" href="#features">What's inside</a>
+            </div>
+
+            <p class="small">
+              Questions? Email
+              <a data-cfg="supportEmail" href="mailto:">support</a>.
+            </p>
+          </div>
+
+          <div class="hero-phone">
+            <div class="phone-frame placeholder" aria-hidden="true">
+              App screenshot<br />coming soon
+            </div>
+          </div>
         </div>
-      </aside>
-      <div>
-        <h1>Log sets in seconds. See the story unfold.</h1>
-        <p class="lede">An iOS app for lifters who train hard but have trouble sticking with tracking. Local-first, no accounts, no nonsense.</p>
-        <a class="hero-cta" href="#" data-cfg="appStoreUrl">Download on the App Store</a>
-      </div>
-    </section>
 
-    <!-- Feature dispatches -->
-    <section class="row section">
-      <aside class="rail">
-        <div class="rail-stack">
-          <span class="eyebrow">Dispatches</span>
-          <span class="eyebrow">06 Features</span>
+        <div id="features" class="grid" role="region" aria-labelledby="features-heading">
+          <h2 id="features-heading" class="visually-hidden">App Features</h2>
+
+          <article class="feature">
+            <p class="feature-num">01 / Fast Logging</p>
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14M12 5v14" />
+              </svg>
+            </span>
+            <h3>Three taps to a working set.</h3>
+            <p>The quick-adjust row trades typing for tapping. Weight, reps, done — the keyboard never appears. Logging engineered to disappear so you can keep training.</p>
+          </article>
+
+          <article class="feature">
+            <p class="feature-num">02 / Personal Records</p>
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2l2.39 4.84L20 7.6l-4 3.9.94 5.5L12 14.77l-4.94 2.6.94-5.5-4-3.9 5.61-.76L12 2z" />
+              </svg>
+            </span>
+            <h3>PRs the app finds for you.</h3>
+            <p>Every set is checked against your history. New records surface automatically with a quiet badge — no chasing leaderboards, no shouting confetti.</p>
+          </article>
+
+          <article class="feature">
+            <p class="feature-num">03 / Muscle Coverage</p>
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="9" />
+                <path d="M12 3v18M3 12h18" />
+              </svg>
+            </span>
+            <h3>See the gaps in your week.</h3>
+            <p>A split-aware coverage engine maps each set to the muscle regions it actually trains — upper chest, posterior delts, long-head triceps. Imbalances stop hiding.</p>
+          </article>
+
+          <article class="feature">
+            <p class="feature-num">04 / Progression Trends</p>
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 17l6-6 4 4 8-8" />
+                <path d="M14 7h7v7" />
+              </svg>
+            </span>
+            <h3>The line that pays off.</h3>
+            <p>Per-exercise dual-axis charts plot weight against volume across weeks and months. Less guessing what to do next. More evidence that the work is working.</p>
+          </article>
+
+          <article class="feature">
+            <p class="feature-num">05 / Local-First</p>
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="11" width="18" height="10" rx="2" />
+                <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+              </svg>
+            </span>
+            <h3>Your data stays yours.</h3>
+            <p>The app runs entirely on-device by default. Optional iCloud sync via Sign in with Apple — no servers we own, no analytics on your sets, no tracking ever.</p>
+          </article>
+
+          <article class="feature">
+            <p class="feature-num">06 / Health Integration</p>
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+              </svg>
+            </span>
+            <h3>Fits the rest of your stack.</h3>
+            <p>Optional writes to Apple Health. Live Activity on the lock screen and Dynamic Island during workouts. Quiet integration, never noisy.</p>
+          </article>
         </div>
-      </aside>
-      <div>
 
-        <article class="dispatch">
-          <p class="dispatch-num">01 / Fast Logging</p>
-          <h3>Three taps to a working set.</h3>
-          <p>The quick-adjust row trades typing for tapping. Weight, reps, done — the keyboard never appears. Logging is engineered to disappear so you can keep training.</p>
-        </article>
-
-        <article class="dispatch">
-          <p class="dispatch-num">02 / Personal Records</p>
-          <h3>PRs the app finds for you.</h3>
-          <p>Every set is checked against your history. New records surface automatically with a quiet badge — no chasing leaderboards, no shouting confetti.</p>
-        </article>
-
-        <article class="dispatch">
-          <p class="dispatch-num">03 / Muscle Coverage</p>
-          <h3>See the gaps in your week.</h3>
-          <p>A split-aware coverage engine maps each set to the muscle regions it actually trains — upper chest, posterior delts, long-head triceps. Imbalances stop hiding.</p>
-        </article>
-
-        <article class="dispatch">
-          <p class="dispatch-num">04 / Progression Trends</p>
-          <h3>The line that pays off.</h3>
-          <p>Per-exercise dual-axis charts plot weight against volume across weeks and months. Less guessing what to do next. More evidence that the work is working.</p>
-        </article>
-
-        <article class="dispatch">
-          <p class="dispatch-num">05 / Local-First, Optional Sync</p>
-          <h3>Your data stays yours.</h3>
-          <p>The app runs entirely on-device by default. Optional iCloud sync via Sign in with Apple — no servers we own, no analytics on your sets, no tracking ever.</p>
-        </article>
-
-        <article class="dispatch">
-          <p class="dispatch-num">06 / Health Integration</p>
-          <h3>Fits the rest of your stack.</h3>
-          <p>Optional writes to Apple Health. Live Activity on the lock screen and Dynamic Island during workouts. Quiet integration, never noisy.</p>
-        </article>
-
-      </div>
-    </section>
-
-    <!-- Pull quote -->
-    <section class="row section">
-      <aside class="rail">
-        <div class="rail-stack">
-          <span class="eyebrow">From the Manual</span>
-        </div>
-      </aside>
-      <div>
         <blockquote class="pullquote">
-          “Logging a set is so fast it disappears.”
-          <cite class="pullquote-cite">— Design philosophy, internal</cite>
+          &ldquo;Logging a set is so fast it disappears.&rdquo;
+          <cite class="pullquote-cite">&mdash; Design philosophy, internal</cite>
         </blockquote>
-      </div>
-    </section>
 
-    <!-- DesignKit teaser -->
-    <section class="row section">
-      <aside class="rail">
-        <div class="rail-stack">
-          <span class="eyebrow">Behind the App</span>
+        <div class="teaser">
+          <div>
+            <p class="teaser-label">DesignKit — the system underneath.</p>
+            <p class="teaser-hint">Tokens, themeable components, and a 34-preset catalog. Built once, shared across the ecosystem.</p>
+          </div>
+          <a class="btn ghost" href="designkit.html">See it in action &rarr;</a>
         </div>
-      </aside>
-      <div>
-        <a class="crosslink" href="designkit.html">
-          <h3>DesignKit — the system underneath.</h3>
-          <p>FitnessTracker is built on DesignKit, a shared design language for a small ecosystem of local-first apps. Tokens, themeable components, and customization that doesn't break the app's identity.</p>
-          <p class="crosslink-arrow">See it in action →</p>
-        </a>
+
+      </section>
+
+      <div class="screenshot-carousel" aria-label="App screenshots">
+        <button class="carousel-btn" data-dir="prev" type="button" aria-label="Previous screenshot">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M15 6l-6 6 6 6" />
+          </svg>
+        </button>
+        <button class="carousel-btn" data-dir="next" type="button" aria-label="Next screenshot">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M9 6l6 6-6 6" />
+          </svg>
+        </button>
+        <div class="carousel-track">
+          <div class="shot-placeholder">Workout<br />Logger</div>
+          <div class="shot-placeholder">Set<br />Detail</div>
+          <div class="shot-placeholder">Muscle<br />Coverage</div>
+          <div class="shot-placeholder">PR<br />History</div>
+          <div class="shot-placeholder">Progression<br />Chart</div>
+          <div class="shot-placeholder">Split<br />Editor</div>
+          <div class="shot-placeholder">Live<br />Activity</div>
+          <div class="shot-placeholder">Settings<br />Themes</div>
+        </div>
       </div>
-    </section>
+    </main>
 
-  </main>
+    <footer class="footer" role="contentinfo">
+      <div>
+        &copy; <span data-cfg="copyrightYear">2026</span>
+        <span data-cfg="copyrightHolder">Lauterstar</span>
+      </div>
 
-  <footer class="colophon">
-    <div class="colophon-inner">
-      <span>© <span data-cfg="copyrightYear">2026</span> <span data-cfg="copyrightHolder">Lauterstar</span></span>
-      <ul>
+      <ul class="footer-links">
         <li><a href="privacy.html">Privacy</a></li>
         <li><a href="terms.html">Terms</a></li>
         <li><a href="support.html">Support</a></li>
         <li><a href="press.html">Press</a></li>
       </ul>
-    </div>
-  </footer>
-
+    </footer>
+  </div>
 </body>
 </html>

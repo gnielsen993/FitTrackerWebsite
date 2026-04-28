@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Public marketing website for **FitnessTracker** — a local-first SwiftUI iOS app for split logging, muscle coverage, and workout visuals. Part of the broader ecosystem (DesignKit + HabitTracker + FitnessTracker + PantryPlanner).
+Public marketing website for **Stack - Gym Tracker** — display name **Stack** — a local-first SwiftUI iOS app for split logging, muscle coverage, and workout visuals. Part of the broader ecosystem (DesignKit + HabitTracker + Stack + PantryPlanner).
 
 This repository hosts the static landing page and required legal pages (Privacy Policy, Terms of Service). Intentionally lightweight and framework-free — no build step, no dependencies, no JS framework.
 
@@ -39,7 +39,7 @@ This repository hosts the static landing page and required legal pages (Privacy 
 
 ## Design System
 
-The website's visual identity must echo the FitnessTracker app's **Balanced Luxury** theme — but the site is HTML/CSS, not Swift, so there is no DesignKit dependency. Translate the app's tokens into CSS custom properties.
+The website's visual identity must echo the Stack app's **Balanced Luxury** theme — but the site is HTML/CSS, not Swift, so there is no DesignKit dependency. Translate the app's tokens into CSS custom properties.
 
 ### Palette (CSS variables in `:root`)
 
@@ -78,7 +78,7 @@ The website's visual identity must echo the FitnessTracker app's **Balanced Luxu
 
 Significant website changes go into `CHANGELOG.md` at the repo root.
 
-When a website change is tied to a specific FitnessTracker app version (new screenshots for a feature release, updated copy for a renamed feature), cross-reference the app's `Docs/releases/v{version}.md` from the changelog entry.
+When a website change is tied to a specific Stack app version (new screenshots for a feature release, updated copy for a renamed feature), cross-reference the app's `Docs/releases/v{version}.md` from the changelog entry.
 
 ### What to log
 - Visible content changes (new sections, copy rewrites, new screenshots)
