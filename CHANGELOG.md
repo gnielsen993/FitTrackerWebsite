@@ -5,6 +5,12 @@ A running log of meaningful changes to the Stack website. The iOS app's own rele
 ## Unreleased
 
 ### Added
+- `updates.html` — added the Stack v1.0.1 public update entry covering iCloud sync confidence, custom exercise muscle coverage/catalog reuse, Big 3 / 1RM grouping, warm-up timer polish, and catalog cleanup.
+
+### Changed
+- `assets/config.js` — bumped displayed app version from 1.0 to 1.0.1.
+
+### Added
 - New `about.html` — full SEO-rich About page covering why Stack exists, what's inside (logging, train flow, muscle coverage, PRs, charts, Live Activity, sync, themes), who it's for, privacy posture, ecosystem context, and a long FAQ block. Includes `AboutPage` and `FAQPage` JSON-LD for richer search results, OG/Twitter card metadata, and dual App Store CTAs.
 - "About" entry added to primary nav across every page (`index`, `designkit`, `updates`, `press`, `support`, `privacy`, `terms`, `about`).
 
