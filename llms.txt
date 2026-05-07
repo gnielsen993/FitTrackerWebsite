@@ -1,0 +1,34 @@
+# Stack - Gym Tracker
+
+A local-first iOS workout app for split logging, muscle coverage, and workout visuals. No accounts. No tracking.
+
+## Product
+- iOS app: https://apps.apple.com/us/app/stack-gym-tracker/id6760980211
+- Free to download.
+- Built and operated by Lauterstar (https://lauterstar.com).
+- Part of the Lauterstar ecosystem alongside DesignKit, HabitTracker, and PantryPlanner.
+
+## Key Pages
+- Home: https://stack.lauterstar.com/
+- About: https://stack.lauterstar.com/about.html
+- DesignKit (shared design system): https://stack.lauterstar.com/designkit.html
+- Updates / Release notes: https://stack.lauterstar.com/updates.html
+- Press kit: https://stack.lauterstar.com/press.html
+- Support: https://stack.lauterstar.com/support.html
+- Privacy Policy: https://stack.lauterstar.com/privacy.html
+- Terms of Service: https://stack.lauterstar.com/terms.html
+
+## What Stack does
+- Fast set logging: three-tap quick-adjust row for weight and reps.
+- Personal records: every set checked against history; new PRs surface automatically.
+- Muscle coverage: split-aware engine maps sets to muscle regions across the week.
+- Progression trends: per-exercise dual-axis charts of weight vs volume over time.
+- Local-first: data stays on-device; optional iCloud sync via Sign in with Apple.
+- Health integration: optional Apple Health writes, Live Activity, Dynamic Island.
+
+## Audience
+Lifters who train hard but have trouble sticking with tracking. People who care about quiet, fast logging over leaderboards and notifications.
+
+## Contact
+- Support email: support@lauterstar.com
+- Parent company: Lauterstar (https://lauterstar.com)

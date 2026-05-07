@@ -1,1 +1,4 @@
 .DS_Store
+
+# Original (uncompressed) image backups
+assets/images/originals/

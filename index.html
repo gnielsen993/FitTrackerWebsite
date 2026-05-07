@@ -7,7 +7,7 @@
   <title>Stack - Gym Tracker — Log sets in seconds. See the story unfold.</title>
   <meta name="description" content="A local-first iOS workout app for split logging, muscle coverage, and workout visuals. No accounts. No tracking." />
 
-  <link rel="canonical" href="/" />
+  <link rel="canonical" href="https://stack.lauterstar.com/" />
   <meta name="robots" content="index,follow,max-image-preview:large" />
   <meta name="theme-color" content="#FAF7F0" media="(prefers-color-scheme: light)" />
   <meta name="theme-color" content="#1C1B1A" media="(prefers-color-scheme: dark)" />
@@ -17,13 +17,14 @@
   <meta property="og:locale" content="en_US" />
   <meta property="og:title" content="Stack - Gym Tracker — Log sets in seconds. See the story unfold." />
   <meta property="og:description" content="A local-first iOS workout app for split logging, muscle coverage, and workout visuals." />
-  <meta property="og:image" content="assets/images/icon-1024.png" />
+  <meta property="og:url" content="https://stack.lauterstar.com/" />
+  <meta property="og:image" content="https://stack.lauterstar.com/assets/images/icon-1024.png" />
   <meta property="og:image:alt" content="Stack app icon" />
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Stack - Gym Tracker" />
   <meta name="twitter:description" content="Log sets in seconds. See the story unfold." />
-  <meta name="twitter:image" content="assets/images/icon-1024.png" />
+  <meta name="twitter:image" content="https://stack.lauterstar.com/assets/images/icon-1024.png" />
 
   <link rel="icon" href="assets/images/icon-1024.png" />
   <link rel="apple-touch-icon" href="assets/images/icon-1024.png" />
@@ -38,8 +39,17 @@
     "@graph": [
       {
         "@type": "Organization",
+        "@id": "https://stack.lauterstar.com/#org",
         "name": "Lauterstar",
-        "url": "/"
+        "url": "https://lauterstar.com/"
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://stack.lauterstar.com/#site",
+        "url": "https://stack.lauterstar.com/",
+        "name": "Stack - Gym Tracker",
+        "publisher": { "@id": "https://stack.lauterstar.com/#org" },
+        "inLanguage": "en-US"
       },
       {
         "@type": "MobileApplication",
@@ -48,7 +58,9 @@
         "operatingSystem": "iOS",
         "applicationCategory": "HealthApplication",
         "description": "Local-first workout tracking with split logging, muscle coverage, and workout visuals.",
-        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "downloadUrl": "https://apps.apple.com/us/app/stack-gym-tracker/id6760980211",
+        "publisher": { "@id": "https://stack.lauterstar.com/#org" }
       }
     ]
   }
@@ -220,7 +232,7 @@
           <img src="assets/images/screenshots/progression-chart.png" alt="Progression Chart — Bench Press weight and reps trend" />
           <img src="assets/images/screenshots/history.png" alt="History — monthly calendar of completed sessions" />
           <img src="assets/images/screenshots/split-editor.png" alt="Split Editor — routines list with exercise counts" />
-          <img src="assets/images/screenshots/settings-themes.png" alt="Settings Themes — preset catalog across Classic, Sweet, and Bright families" />
+          <img src="assets/images/screenshots/settings-themes.jpg" alt="Settings Themes — preset catalog across Classic, Sweet, and Bright families" loading="lazy" />
         </div>
       </div>
     </main>
