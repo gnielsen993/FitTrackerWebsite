@@ -11,7 +11,7 @@
 }
 
 :root {
-  /* Light (Balanced Luxury — cream) */
+  /* Light (Balanced Luxury - cream) */
   --bg: #FAF7F0;
   --surface: #FFFFFF;
   --surface-2: #F2EDE0;
@@ -21,7 +21,7 @@
   --text-dim: #5A5550;
   --text-mute: #8A857E;
 
-  /* Accents — translated from the app's DesignKit Classic palette */
+  /* Accents - translated from the app's DesignKit Classic palette */
   --accent: #2F5D3A;          /* forest */
   --accent-hover: #3E7349;
   --accent-soft: rgba(47, 93, 58, 0.10);
@@ -33,7 +33,7 @@
   --accent-walnut: #6B4F3A;
   --accent-stone: #A8A095;
 
-  /* Spacing scale — mirrors DesignKit */
+  /* Spacing scale - mirrors DesignKit */
   --space-xs: 4px;
   --space-s: 8px;
   --space-m: 16px;

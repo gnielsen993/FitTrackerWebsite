@@ -4,9 +4,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Public marketing website for **Stack - Gym Tracker** — display name **Stack** — a local-first SwiftUI iOS app for split logging, muscle coverage, and workout visuals. Part of the broader ecosystem (DesignKit + HabitTracker + Stack + PantryPlanner).
+Public marketing website for **Stack - Gym Tracker** - display name **Stack** - a local-first SwiftUI iOS app for split logging, muscle coverage, and workout visuals. Part of the broader ecosystem (DesignKit + HabitTracker + Stack + PantryPlanner).
 
-This repository hosts the static landing page and required legal pages (Privacy Policy, Terms of Service). Intentionally lightweight and framework-free — no build step, no dependencies, no JS framework.
+This repository hosts the static landing page and required legal pages (Privacy Policy, Terms of Service). Intentionally lightweight and framework-free - no build step, no dependencies, no JS framework.
 
 **Stack:** Static HTML + CSS + minimal vanilla JS. No React/Vue/Svelte. No bundler.
 
@@ -30,16 +30,17 @@ This repository hosts the static landing page and required legal pages (Privacy 
 
 ## General Rules
 
-1. **Write code immediately when asked to implement.** If a plan already exists, implement it — do not produce another plan file. Only plan when explicitly asked.
+1. **Write code immediately when asked to implement.** If a plan already exists, implement it - do not produce another plan file. Only plan when explicitly asked.
 2. **Check the codebase before suggesting anything.** Use Grep/Read to verify what already exists before recommending features, fixes, or restructures.
 3. **No frameworks.** Do not introduce React, Vue, Tailwind, Bootstrap, npm, or any build step. The site is intentionally framework-free. Plain HTML/CSS/JS only.
 4. **No monolithic files.** Keep individual HTML pages focused on one purpose. If a page grows beyond ~400 lines, split shared chrome (header/footer) into includes via a small JS partial loader or duplicate carefully.
 5. **All styling in `assets/styles.css`.** No inline `<style>` blocks except for above-the-fold critical CSS when explicitly justified. No inline `style=""` attributes.
-6. **Commit in atomic units — each change set lands as its own commit; small related fixes may be grouped, but never mix unrelated work.** Commit before moving on, not at session end. Granular history is how regressions are bisected.
+6. **Commit in atomic units - each change set lands as its own commit; small related fixes may be grouped, but never mix unrelated work.** Commit before moving on, not at session end. Granular history is how regressions are bisected.
+7. **No em-dashes anywhere.** Do not use the em-dash character (Unicode U+2014) or any HTML entity that renders as one (`&mdash;`, `&#8212;`, `&#x2014;`) in any file the site ships. That includes HTML body copy, page titles, meta descriptions, OG / Twitter tags, JSON-LD descriptions, robots.txt and llms.txt comments, CSS comments, JS comments, README, CHANGELOG, and these guidance files. Em-dashes are a strong LLM tell - human-written copy almost never reaches for them, and their presence makes prose feel synthetic. Substitutes, in order of preference: hyphen with surrounding spaces ` - `, a comma, a colon, a period, or a full rephrase. En-dashes (Unicode U+2013) are also out for user-visible copy. This file and `AGENTS.md` are the documented exception - they cite the forbidden tokens inside code spans so the rule is teachable. Everywhere else in the repo must be clean. Verify before commit by running ``LC_ALL=C grep -rE "$(printf '\xe2\x80\x94')|&mdash;|&#8212;|&#x2014;" . --exclude-dir=.git --exclude-dir=originals --exclude=AGENTS.md --exclude=CLAUDE.md``; the result must be empty.
 
 ## Design System
 
-The website's visual identity must echo the Stack app's **Balanced Luxury** theme — but the site is HTML/CSS, not Swift, so there is no DesignKit dependency. Translate the app's tokens into CSS custom properties.
+The website's visual identity must echo the Stack app's **Balanced Luxury** theme - but the site is HTML/CSS, not Swift, so there is no DesignKit dependency. Translate the app's tokens into CSS custom properties.
 
 ### Palette (CSS variables in `:root`)
 
@@ -58,16 +59,16 @@ The website's visual identity must echo the Stack app's **Balanced Luxury** them
 ### Rules
 
 - **No hardcoded colors in markup or component CSS.** Always reference CSS custom properties.
-- **Light/dark mode** uses `prefers-color-scheme` — match the app's behavior.
+- **Light/dark mode** uses `prefers-color-scheme` - match the app's behavior.
 - **Typography:** system font stack by default (`-apple-system, BlinkMacSystemFont, ...`). The app uses SF Pro; the web fallback to system fonts gives the same feel on Apple devices.
 - **No randomly chosen colors, fonts, or radii.** Personality comes from layout and tone, not styling chaos.
 - **Spacing scale:** mirror the DesignKit scale (`xs, s, m, l, xl, xxl`) as CSS variables. No magic-number margins.
 
 ## Content Conventions
 
-- **App Store URL, support email, and version pulled from `assets/config.js`** — never hardcode in pages. Keeps cross-page updates one-edit.
+- **App Store URL, support email, and version pulled from `assets/config.js`** - never hardcode in pages. Keeps cross-page updates one-edit.
 - **Screenshots** live in `assets/images/screenshots/`. Use 2x or 3x resolution; serve via `<img srcset>` if file size matters.
-- **Legal copy (privacy/terms)** are templates — flag any change that could have real legal implications and ask the user before shipping.
+- **Legal copy (privacy/terms)** are templates - flag any change that could have real legal implications and ask the user before shipping.
 
 ## Linking to the App
 
@@ -95,7 +96,7 @@ When a website change is tied to a specific Stack app version (new screenshots f
 
 A task is done when:
 - HTML validates (no unclosed tags, no missing alt text on content images)
-- CSS variables used — no hardcoded colors slipped in
+- CSS variables used - no hardcoded colors slipped in
 - Page renders correctly in light + dark mode
 - Mobile layout verified at narrow viewport (≤375px)
 - Links work (no 404s to other pages or assets)

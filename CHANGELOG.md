@@ -5,35 +5,35 @@ A running log of meaningful changes to the Stack website. The iOS app's own rele
 ## Unreleased
 
 ### Added
-- `updates.html` — added the Stack v1.0.1 public update entry covering iCloud sync confidence, custom exercise muscle coverage/catalog reuse, Big 3 / 1RM grouping, warm-up timer polish, and catalog cleanup.
+- `updates.html` - added the Stack v1.0.1 public update entry covering iCloud sync confidence, custom exercise muscle coverage/catalog reuse, Big 3 / 1RM grouping, warm-up timer polish, and catalog cleanup.
 
 ### Changed
-- `assets/config.js` — bumped displayed app version from 1.0 to 1.0.1.
+- `assets/config.js` - bumped displayed app version from 1.0 to 1.0.1.
 
 ### Added
-- New `about.html` — full SEO-rich About page covering why Stack exists, what's inside (logging, train flow, muscle coverage, PRs, charts, Live Activity, sync, themes), who it's for, privacy posture, ecosystem context, and a long FAQ block. Includes `AboutPage` and `FAQPage` JSON-LD for richer search results, OG/Twitter card metadata, and dual App Store CTAs.
+- New `about.html` - full SEO-rich About page covering why Stack exists, what's inside (logging, train flow, muscle coverage, PRs, charts, Live Activity, sync, themes), who it's for, privacy posture, ecosystem context, and a long FAQ block. Includes `AboutPage` and `FAQPage` JSON-LD for richer search results, OG/Twitter card metadata, and dual App Store CTAs.
 - "About" entry added to primary nav across every page (`index`, `designkit`, `updates`, `press`, `support`, `privacy`, `terms`, `about`).
 
 ### Changed
-- `updates.html` — replaced the "Coming soon" placeholder with the full v1.0 release log: logging hub modes, train flow, muscle coverage, plates &amp; equipment, Live Activity, iCloud sync, polish &amp; accessibility. Cross-references `Docs/FitTracker-CHANGELOG.md` in the Stack app repo.
-- `index.html` App Store CTA — hardcoded the production URL into the static `href` (with `target="_blank"` and `rel="noopener"`) so the link works even before `config.js` runs and opens the App Store in a new tab on desktop.
+- `updates.html` - replaced the "Coming soon" placeholder with the full v1.0 release log: logging hub modes, train flow, muscle coverage, plates &amp; equipment, Live Activity, iCloud sync, polish &amp; accessibility. Cross-references `Docs/FitTracker-CHANGELOG.md` in the Stack app repo.
+- `index.html` App Store CTA - hardcoded the production URL into the static `href` (with `target="_blank"` and `rel="noopener"`) so the link works even before `config.js` runs and opens the App Store in a new tab on desktop.
 - Replaced placeholder Privacy Policy and Terms of Service pages with concise Stack-specific legal copy covering local storage, optional iCloud sync, Apple Health writes, backup export/import, account deletion, App Store 9+ rating, exercise-risk disclaimers, and support contact.
 - Renamed public site/app references from FitnessTracker to Stack - Gym Tracker, with Stack as the display name in site chrome. Confirmed site support links use `support@lauterstar.com`.
-- Full visual redesign — ported the layout/component system from a sibling marketing site (Strada) and rebranded to FitnessTracker. Hero is now a split (text + phone-frame) with App Store CTA, features render as a 3-column dividing grid, screenshots live in a full-bleed drag-scroll carousel with chevron buttons, and content pages share a centered `.doc` layout. Typography moved to the system font stack (no Google Fonts). Forest accent (`#2F5D3A`) anchors light mode; lifted forest (`#6FA17C`) anchors dark mode via `prefers-color-scheme`.
-- `assets/styles.css` — rewritten end-to-end. New token names (`--bg`, `--surface`, `--accent`, `--text*`, `--border*`, `--space-*`, `--radius-*`), light+dark via `prefers-color-scheme`, no inline magic numbers.
-- All HTML pages — replaced masthead/rail layout with single-row nav + `.doc` body. Removed Fraunces font import.
+- Full visual redesign - ported the layout/component system from a sibling marketing site (Strada) and rebranded to FitnessTracker. Hero is now a split (text + phone-frame) with App Store CTA, features render as a 3-column dividing grid, screenshots live in a full-bleed drag-scroll carousel with chevron buttons, and content pages share a centered `.doc` layout. Typography moved to the system font stack (no Google Fonts). Forest accent (`#2F5D3A`) anchors light mode; lifted forest (`#6FA17C`) anchors dark mode via `prefers-color-scheme`.
+- `assets/styles.css` - rewritten end-to-end. New token names (`--bg`, `--surface`, `--accent`, `--text*`, `--border*`, `--space-*`, `--radius-*`), light+dark via `prefers-color-scheme`, no inline magic numbers.
+- All HTML pages - replaced masthead/rail layout with single-row nav + `.doc` body. Removed Fraunces font import.
 
 ### Added
-- `assets/app.js` — drag-to-scroll + chevron buttons for the home-page screenshot carousel.
+- `assets/app.js` - drag-to-scroll + chevron buttons for the home-page screenshot carousel.
 - Phone-frame and screenshot placeholders ready to swap in real app shots once captured.
 
 ### Initial scaffold (prior)
 - Editorial heritage layout, Fraunces serif display + system sans body, warm cream / charcoal palette mapped from FitnessTracker's "Balanced Luxury" theme.
-- Home (`index.html`) — masthead, hero, six numbered feature dispatches, pull quote, DesignKit teaser.
-- DesignKit page (`designkit.html`) — explainer of the token contract + component model, live theme switcher with 7 curated presets leading with the dramatic ones (vapor, solar, gruvbox, sakura, dracula, nord, cream, forest) so visitors see real bg/surface/text shifts instead of accent-only swaps, plus catalog-depth section listing all 34 presets across six categories.
-- Stub pages — Privacy, Terms, Updates, Support, Press — wired into nav with shared chrome.
-- `assets/config.js` — single-source-of-truth metadata (App Store URL, support email, version, copyright).
-- `assets/styles.css` — full editorial design system in CSS variables, framework-free.
-- `assets/theme-demo.js` — vanilla JS theme switcher scoped to the DesignKit demo card only.
-- `assets/images/icon-1024.png` — copied from the FitnessTracker app icon set.
+- Home (`index.html`) - masthead, hero, six numbered feature dispatches, pull quote, DesignKit teaser.
+- DesignKit page (`designkit.html`) - explainer of the token contract + component model, live theme switcher with 7 curated presets leading with the dramatic ones (vapor, solar, gruvbox, sakura, dracula, nord, cream, forest) so visitors see real bg/surface/text shifts instead of accent-only swaps, plus catalog-depth section listing all 34 presets across six categories.
+- Stub pages - Privacy, Terms, Updates, Support, Press - wired into nav with shared chrome.
+- `assets/config.js` - single-source-of-truth metadata (App Store URL, support email, version, copyright).
+- `assets/styles.css` - full editorial design system in CSS variables, framework-free.
+- `assets/theme-demo.js` - vanilla JS theme switcher scoped to the DesignKit demo card only.
+- `assets/images/icon-1024.png` - copied from the FitnessTracker app icon set.
 - AI agent conventions (`CLAUDE.md`, `AGENTS.md`) and project README.

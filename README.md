@@ -1,8 +1,8 @@
 # Stack Website
 
-Public website for **Stack - Gym Tracker** — display name **Stack** — a local-first SwiftUI iOS app for split logging, muscle coverage tracking, and workout visuals. Part of a broader ecosystem (DesignKit + HabitTracker + Stack + PantryPlanner) that shares a luxury design language.
+Public website for **Stack - Gym Tracker** - display name **Stack** - a local-first SwiftUI iOS app for split logging, muscle coverage tracking, and workout visuals. Part of a broader ecosystem (DesignKit + HabitTracker + Stack + PantryPlanner) that shares a luxury design language.
 
-This repository hosts the static landing page along with required legal pages (Privacy Policy and Terms of Service). The site is intentionally lightweight and framework-free — no build step, no bundler, no JS framework.
+This repository hosts the static landing page along with required legal pages (Privacy Policy and Terms of Service). The site is intentionally lightweight and framework-free - no build step, no bundler, no JS framework.
 
 ---
 
@@ -12,7 +12,7 @@ This repository hosts the static landing page along with required legal pages (P
   Marketing landing page describing Stack's core features.
 
 - **Privacy Policy** (`privacy.html`)
-  Explains how user data is collected and used. (Stack is local-first — data stays on device.)
+  Explains how user data is collected and used. (Stack is local-first - data stays on device.)
 
 - **Terms of Service** (`terms.html`)
   Rules and conditions for using the app and website.
@@ -54,7 +54,7 @@ Edit this single file rather than hardcoding values across pages.
 
 ## Design
 
-The website's visual identity echoes the Stack iOS app's **Balanced Luxury** theme: warm cream backgrounds in light mode, charcoal in dark mode, accents constrained to forest / navy / maroon / walnut / stone. Colors are exposed as CSS custom properties on `:root` — see `assets/styles.css`.
+The website's visual identity echoes the Stack iOS app's **Balanced Luxury** theme: warm cream backgrounds in light mode, charcoal in dark mode, accents constrained to forest / navy / maroon / walnut / stone. Colors are exposed as CSS custom properties on `:root` - see `assets/styles.css`.
 
 Light/dark switching uses `prefers-color-scheme` to match the app's behavior.
 
@@ -79,7 +79,7 @@ The Terms of Service and Privacy Policy included in this repository are template
 
 ## Changelog
 
-See [`CHANGELOG.md`](CHANGELOG.md) for a running log of meaningful changes. The iOS app's own release log lives in the app repo at `Docs/releases/` — when a website change is tied to a specific app version, cross-reference the two.
+See [`CHANGELOG.md`](CHANGELOG.md) for a running log of meaningful changes. The iOS app's own release log lives in the app repo at `Docs/releases/` - when a website change is tied to a specific app version, cross-reference the two.
 
 ---
 

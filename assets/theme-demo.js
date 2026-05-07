@@ -1,5 +1,5 @@
 // DesignKit live theme switcher.
-// Curated slice of the catalog — leads with the dramatic ones (different bg + surface + text,
+// Curated slice of the catalog - leads with the dramatic ones (different bg + surface + text,
 // not just accent swaps). Hex values mirror Sources/DesignKit/Theme/PresetTheme.swift.
 
 const PRESETS = {
