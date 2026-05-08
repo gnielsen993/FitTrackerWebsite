@@ -79,6 +79,15 @@
       <p class="lede">A running log of what shipped, when, and why. Updated alongside each App Store release.</p>
 
       <ul class="updates-list">
+        <li id="v1-0-2">
+          <span class="ver">v1.0.2 &middot; May 2026</span>
+          <strong>Smarter set re-do, cleaner routine library, and a fresh default theme.</strong>
+          <p>Stack 1.0.2 sharpens the in-workout flow, finally cleans up duplicated default routines that piled up across iCloud devices, and replaces the generic "Classic" picker slot with the Forest theme as the first-launch landing.</p>
+          <p><strong>Plate math on re-do</strong> &middot; Logging a set now remembers which bar you used (Olympic 45, Women's 35, EZ 25, or No bar with an initial machine resistance). Re-doing the next set opens the keypad's Plates view already balanced for that bar plus the prefilled weight, so you see "1 &times; 45 + 1 &times; 25 per side" instead of doing the loading math at the rack. Sets logged before this update fall back to the men's bar so you still get a plate breakdown on re-do.</p>
+          <p><strong>Routine library cleanup</strong> &middot; Default routines (Push, Pull, Lower, Full Body) no longer multiply on every launch when iCloud sync is signed in. Same race that previously affected the exercise library: the local seed step ran before iCloud merged in your synced copies. Stack now collapses same-name routines into a single canonical entry and points all your workout history at the survivor. Idempotent, runs every launch, and runs again after each iCloud import.</p>
+          <p><strong>Theme picker</strong> &middot; The picker now leads with Forest, Stack's signature teal-on-cream identity, and drops the generic "Classic" slot that didn't belong here. First launch lands on Forest. Existing users keep whatever preset they previously chose.</p>
+          <p><strong>Helping us improve Stack</strong> &middot; Stack now includes optional crash reports and lightweight usage analytics so we can spot real-world failures faster and learn which features actually help people train. Both are on by default, both can be turned off any time in <a href="privacy.html">Settings &rarr; Privacy &amp; Data</a>, and neither sends your workout content, weights, reps, or names. Full disclosure on the Privacy page.</p>
+        </li>
         <li id="v1-0-1">
           <span class="ver">v1.0.1 &middot; May 2026</span>
           <strong>Reliability polish for sync, coverage, and workout tracking.</strong>

@@ -5,9 +5,12 @@ A running log of meaningful changes to the Stack website. The iOS app's own rele
 ## Unreleased
 
 ### Added
+- `updates.html` - added the Stack v1.0.2 public update entry covering plate-math re-do (bar choice persists, balancer derives plates on next set), default-routine library cleanup (collapses iCloud-induced duplicates), Forest as first-launch theme, and the optional crash-reports + usage-analytics disclosure that points at Settings &rarr; Privacy &amp; Data.
+- `privacy.html` - new "Optional Diagnostics and Product Insights" section disclosing Firebase crash reporting and the 9-event analytics taxonomy. Lists what is collected (product interaction, crash data, performance data; no PII, no workout content, no cross-app tracking) and how to opt out (Settings &rarr; Privacy &amp; Data toggles, both default ON). Updated meta/OG/Twitter description to drop the obsolete "no analytics" claim while keeping the local-first posture explicit. "Last updated" rolled to 2026-05-08.
 - `updates.html` - added the Stack v1.0.1 public update entry covering iCloud sync confidence, custom exercise muscle coverage/catalog reuse, Big 3 / 1RM grouping, warm-up timer polish, and catalog cleanup.
 
 ### Changed
+- `assets/config.js` - bumped displayed app version from 1.0.1 to 1.0.2.
 - `assets/config.js` - bumped displayed app version from 1.0 to 1.0.1.
 
 ### Added
