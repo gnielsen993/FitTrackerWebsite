@@ -4,7 +4,7 @@
 window.SITE_CONFIG = Object.freeze({
   appName: "Stack - Gym Tracker",
   displayName: "Stack",
-  appVersion: "1.0.2",
+  appVersion: "1.1.0",
   appStoreUrl: "https://apps.apple.com/us/app/stack-gym-tracker/id6760980211",
   supportEmail: "support@lauterstar.com",
   copyrightHolder: "Lauterstar",

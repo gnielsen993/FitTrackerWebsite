@@ -5,12 +5,14 @@ A running log of meaningful changes to the Stack website. The iOS app's own rele
 ## Unreleased
 
 ### Added
+- `updates.html` - added the Stack v1.1.0 public update entry covering the guided 1RM Test Flow for Bench, Squat, and Deadlift (5-step warm-up ladder, skip-step on every checkpoint, lift-specific final-set rest, retry path capped at 2, validated `OneRMTestResult` written to history with per-lift swipe-to-delete + undo), reactive heads-up cards on the inter-step rest screen (auto-keep default), three target modes (Improve / Estimate / Chosen, persisted per lift), ergonomic warm-up plate loading on the lighter sets, the locked plate-math diagram ordering, always-visible workout timer in the active session title row, Weight Converter relocated into the set logger, and the "Done" to "Complete" set-logger labels rename.
 - `updates.html` - extended the Stack v1.0.2 entry with the onboarding overhaul (real numeric keypad in Plates mode, optional iCloud sign-in step at the end of the flow, fully visual walkthrough that no longer leaves a phantom "Push Day" routine in the library) and a "Schema migration safety" note covering the inferred-lightweight migration rebuild and the CloudKit-backed wipe-and-restore safety net.
 - `updates.html` - added the Stack v1.0.2 public update entry covering plate-math re-do (bar choice persists, balancer derives plates on next set), default-routine library cleanup (collapses iCloud-induced duplicates), Forest as first-launch theme, and the optional crash-reports + usage-analytics disclosure that points at Settings &rarr; Privacy &amp; Data.
 - `privacy.html` - new "Optional Diagnostics and Product Insights" section disclosing Firebase crash reporting and the 9-event analytics taxonomy. Lists what is collected (product interaction, crash data, performance data; no PII, no workout content, no cross-app tracking) and how to opt out (Settings &rarr; Privacy &amp; Data toggles, both default ON). Updated meta/OG/Twitter description to drop the obsolete "no analytics" claim while keeping the local-first posture explicit. "Last updated" rolled to 2026-05-08.
 - `updates.html` - added the Stack v1.0.1 public update entry covering iCloud sync confidence, custom exercise muscle coverage/catalog reuse, Big 3 / 1RM grouping, warm-up timer polish, and catalog cleanup.
 
 ### Changed
+- `assets/config.js` - bumped displayed app version from 1.0.2 to 1.1.0.
 - `assets/config.js` - bumped displayed app version from 1.0.1 to 1.0.2.
 - `assets/config.js` - bumped displayed app version from 1.0 to 1.0.1.
 

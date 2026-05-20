@@ -45,8 +45,9 @@
       "itemListOrder": "https://schema.org/ItemListOrderDescending",
       "name": "Stack release notes",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "item": { "@type": "TechArticle", "headline": "Reliability polish for sync, coverage, and workout tracking (v1.0.1)", "datePublished": "2026-05-01", "url": "https://stack.lauterstar.com/updates.html#v1-0-1", "author": { "@id": "https://stack.lauterstar.com/#org" }, "publisher": { "@id": "https://stack.lauterstar.com/#org" } } },
-        { "@type": "ListItem", "position": 2, "item": { "@type": "TechArticle", "headline": "Stack lands. The first public release (v1.0)", "datePublished": "2026-04-29", "url": "https://stack.lauterstar.com/updates.html#v1-0", "author": { "@id": "https://stack.lauterstar.com/#org" }, "publisher": { "@id": "https://stack.lauterstar.com/#org" } } }
+        { "@type": "ListItem", "position": 1, "item": { "@type": "TechArticle", "headline": "Guided 1RM testing and reactive flow polish (v1.1.0)", "datePublished": "2026-05-19", "url": "https://stack.lauterstar.com/updates.html#v1-1-0", "author": { "@id": "https://stack.lauterstar.com/#org" }, "publisher": { "@id": "https://stack.lauterstar.com/#org" } } },
+        { "@type": "ListItem", "position": 2, "item": { "@type": "TechArticle", "headline": "Reliability polish for sync, coverage, and workout tracking (v1.0.1)", "datePublished": "2026-05-01", "url": "https://stack.lauterstar.com/updates.html#v1-0-1", "author": { "@id": "https://stack.lauterstar.com/#org" }, "publisher": { "@id": "https://stack.lauterstar.com/#org" } } },
+        { "@type": "ListItem", "position": 3, "item": { "@type": "TechArticle", "headline": "Stack lands. The first public release (v1.0)", "datePublished": "2026-04-29", "url": "https://stack.lauterstar.com/updates.html#v1-0", "author": { "@id": "https://stack.lauterstar.com/#org" }, "publisher": { "@id": "https://stack.lauterstar.com/#org" } } }
       ]
     }
   }
@@ -79,6 +80,17 @@
       <p class="lede">A running log of what shipped, when, and why. Updated alongside each App Store release.</p>
 
       <ul class="updates-list">
+        <li id="v1-1-0">
+          <span class="ver">v1.1.0 &middot; May 2026</span>
+          <strong>Guided 1RM testing, reactive flow polish, and Train-tab quality of life.</strong>
+          <p>Stack 1.1.0 turns the estimated 1RM on Bench, Squat, and Deadlift from a number derived from working sets into a number you can actually test. A guided 5-step warm-up adapts to your reps in real time, and the result lands in history with the same trust the rest of your log carries.</p>
+          <p><strong>Test 1RM</strong> &middot; Tap the new pill on the Big 3 trend card for Bench, Squat, or Deadlift to launch a guided NSCA-aligned warm-up ladder (50, 70, 85, 95, then 100 percent of your target). Skip-step is available on every warm-up checkpoint, the rest timer runs the lift-specific final-set protocol (3 minutes bench, 4 minutes squat and deadlift), and a failed-attempt retry path lets you drop the bar by 5 percent up to twice per session. Save commits a validated `OneRMTestResult` to history; the per-lift "1RM Tests" section on each detail view supports swipe-to-delete with a 5 second undo.</p>
+          <p><strong>Pick your target, your way</strong> &middot; The entry sheet now leads with a hero target weight and three modes. Improve sets +5 lb over your current PR. Estimate projects from your recent sets. Chosen lets you dial in a number of your own with the stepper. Your selected mode is remembered per lift across sessions, so opening Squat next week starts where you left off.</p>
+          <p><strong>Reactive warm-up</strong> &middot; Each per-step screen asks "How many reps did you get?" and defaults to the prescribed count, so the common case is one tap. If you fall short on a heavy set, or crush a warm-up that suggests room above the target, a "Heads up" card appears on the rest screen with two equal-weight options: push for the original number, or ease to a saner one. Decide before rest ends, or let it auto-keep the original. The countdown stays visible throughout.</p>
+          <p><strong>Smarter plate loading</strong> &middot; The first two warm-up steps now round to the simplest plate stack within 5 lb of the exact percentage. So a 50 percent set on a 180 lb target loads as one 25 per side (95 lb) instead of a fiddly 22.5 per side (90 lb). Steps 3 and up stay strict because accuracy matters more as the load approaches max. Plate-math diagrams across the app now lock to a single convention: largest plate closest to the bar, smallest on the outside.</p>
+          <p><strong>Train-tab quality of life</strong> &middot; Workout elapsed time is now always visible in the active session title row, no tap-to-reveal. The Weight Converter moved out of Settings and into the set logger as a one-tap sheet with auto-focused decimal pad, so unit conversion is exactly where you need it during a lift. Logging actions that change state read "Complete" instead of "Done" to remove the "am I dismissing this screen?" ambiguity.</p>
+          <p><strong>Privacy posture unchanged</strong> &middot; 1RM testing adds one optional analytics event so we can learn how lifters use the reactive prompts. No PII, no workout content, opt out any time in <a href="privacy.html">Settings &rarr; Privacy &amp; Data</a>. Full disclosure on the Privacy page.</p>
+        </li>
         <li id="v1-0-2">
           <span class="ver">v1.0.2 &middot; May 2026</span>
           <strong>Smarter set re-do, friendlier onboarding, cleaner routine library, fresh default theme.</strong>
