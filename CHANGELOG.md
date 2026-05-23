@@ -5,6 +5,12 @@ A running log of meaningful changes to the Stack website. The iOS app's own rele
 ## Unreleased
 
 ### Added
+- `updates.html` - added v1.1.1 entry: History calendar, personal record detection from normal sessions, 1RM test results in the day panel, Home condensed layout with color-coded frequency bars, Train flat pre-workout screen, and custom theme engine fix.
+
+### Changed
+- `assets/config.js` - bumped displayed app version from 1.1.0 to 1.1.1.
+
+### Added
 - `updates.html` - added the Stack v1.1.0 public update entry covering the guided 1RM Test Flow for Bench, Squat, and Deadlift (5-step warm-up ladder, skip-step on every checkpoint, lift-specific final-set rest, retry path capped at 2, validated `OneRMTestResult` written to history with per-lift swipe-to-delete + undo), reactive heads-up cards on the inter-step rest screen (auto-keep default), three target modes (Improve / Estimate / Chosen, persisted per lift), ergonomic warm-up plate loading on the lighter sets, the locked plate-math diagram ordering, always-visible workout timer in the active session title row, Weight Converter relocated into the set logger, and the "Done" to "Complete" set-logger labels rename.
 - `updates.html` - extended the Stack v1.0.2 entry with the onboarding overhaul (real numeric keypad in Plates mode, optional iCloud sign-in step at the end of the flow, fully visual walkthrough that no longer leaves a phantom "Push Day" routine in the library) and a "Schema migration safety" note covering the inferred-lightweight migration rebuild and the CloudKit-backed wipe-and-restore safety net.
 - `updates.html` - added the Stack v1.0.2 public update entry covering plate-math re-do (bar choice persists, balancer derives plates on next set), default-routine library cleanup (collapses iCloud-induced duplicates), Forest as first-launch theme, and the optional crash-reports + usage-analytics disclosure that points at Settings &rarr; Privacy &amp; Data.

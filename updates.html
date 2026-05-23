@@ -45,9 +45,10 @@
       "itemListOrder": "https://schema.org/ItemListOrderDescending",
       "name": "Stack release notes",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "item": { "@type": "TechArticle", "headline": "Guided 1RM testing and reactive flow polish (v1.1.0)", "datePublished": "2026-05-19", "url": "https://stack.lauterstar.com/updates.html#v1-1-0", "author": { "@id": "https://stack.lauterstar.com/#org" }, "publisher": { "@id": "https://stack.lauterstar.com/#org" } } },
-        { "@type": "ListItem", "position": 2, "item": { "@type": "TechArticle", "headline": "Reliability polish for sync, coverage, and workout tracking (v1.0.1)", "datePublished": "2026-05-01", "url": "https://stack.lauterstar.com/updates.html#v1-0-1", "author": { "@id": "https://stack.lauterstar.com/#org" }, "publisher": { "@id": "https://stack.lauterstar.com/#org" } } },
-        { "@type": "ListItem", "position": 3, "item": { "@type": "TechArticle", "headline": "Stack lands. The first public release (v1.0)", "datePublished": "2026-04-29", "url": "https://stack.lauterstar.com/updates.html#v1-0", "author": { "@id": "https://stack.lauterstar.com/#org" }, "publisher": { "@id": "https://stack.lauterstar.com/#org" } } }
+        { "@type": "ListItem", "position": 1, "item": { "@type": "TechArticle", "headline": "History calendar, personal record detection, and a cleaner home and train screen (v1.1.1)", "datePublished": "2026-05-22", "url": "https://stack.lauterstar.com/updates.html#v1-1-1", "author": { "@id": "https://stack.lauterstar.com/#org" }, "publisher": { "@id": "https://stack.lauterstar.com/#org" } } },
+        { "@type": "ListItem", "position": 2, "item": { "@type": "TechArticle", "headline": "Guided 1RM testing and reactive flow polish (v1.1.0)", "datePublished": "2026-05-19", "url": "https://stack.lauterstar.com/updates.html#v1-1-0", "author": { "@id": "https://stack.lauterstar.com/#org" }, "publisher": { "@id": "https://stack.lauterstar.com/#org" } } },
+        { "@type": "ListItem", "position": 3, "item": { "@type": "TechArticle", "headline": "Reliability polish for sync, coverage, and workout tracking (v1.0.1)", "datePublished": "2026-05-01", "url": "https://stack.lauterstar.com/updates.html#v1-0-1", "author": { "@id": "https://stack.lauterstar.com/#org" }, "publisher": { "@id": "https://stack.lauterstar.com/#org" } } },
+        { "@type": "ListItem", "position": 4, "item": { "@type": "TechArticle", "headline": "Stack lands. The first public release (v1.0)", "datePublished": "2026-04-29", "url": "https://stack.lauterstar.com/updates.html#v1-0", "author": { "@id": "https://stack.lauterstar.com/#org" }, "publisher": { "@id": "https://stack.lauterstar.com/#org" } } }
       ]
     }
   }
@@ -80,6 +81,17 @@
       <p class="lede">A running log of what shipped, when, and why. Updated alongside each App Store release.</p>
 
       <ul class="updates-list">
+        <li id="v1-1-1">
+          <span class="ver">v1.1.1 &middot; May 2026</span>
+          <strong>History calendar, personal record detection, and a cleaner home and train screen.</strong>
+          <p>Stack 1.1.1 replaces the History popup sheet with a full-month calendar that stays in place, surfaces personal records from normal training sessions, and tightens the home and pre-workout screens so the information you need most is easier to find.</p>
+          <p><strong>History calendar</strong> &middot; The History tab now shows a full month at a glance. Tap any day and the detail expands inline below the calendar - no sheet, no navigation push. You see your workout name and duration, a stats row with sets, reps, exercises, and volume, and then any personal records or 1RM test results for that day. Today is selected on open. Days with a completed 1RM test get a star marker so they stand out at a glance.</p>
+          <p><strong>Personal record detection from normal sessions</strong> &middot; Stack now compares every logged set against your full history and flags weight PRs and rep PRs on the spot. Three or fewer records on a given day show as full detail rows in the day panel. More than three collapse into a compact two-column grid so the panel stays readable after a big session.</p>
+          <p><strong>1RM test results in history</strong> &middot; Days with a completed 1RM test show a result card in the day panel with your goal weight, what you actually lifted, and a visual callout if you hit the goal. Days with only a test and no accompanying workout session still get a proper entry in the calendar so nothing gets lost.</p>
+          <p><strong>Home screen</strong> &middot; Today and This Week are now one section instead of two separate cards. The weekly frequency bars are color-coded - the current week is full accent, weeks where you hit your training goal are a softer accent, and missed weeks stay muted - so you can read consistency across the month without counting. The insight line is compressed to a single row so it stays out of the way until you need it.</p>
+          <p><strong>Train screen</strong> &middot; The pre-workout area is simpler. The routine name is the primary element - tap it to switch routines from a half-sheet picker. A small context menu handles edit and delete so they're available without being in the way. The exercise list shows each movement and its set count, nothing more. New Routine and Start Workout sit in a fixed footer so they're always reachable without scrolling.</p>
+          <p><strong>Theme engine fix</strong> &middot; Custom themes now re-derive the full color palette - borders, secondary text, chart fills - from your chosen anchor colors instead of inheriting leftover values from the previous preset. If you use a custom accent or background, the rest of the palette will now shift with it as expected.</p>
+        </li>
         <li id="v1-1-0">
           <span class="ver">v1.1.0 &middot; May 2026</span>
           <strong>Guided 1RM testing, reactive flow polish, and Train-tab quality of life.</strong>
