@@ -54,6 +54,7 @@
         "Weekly muscle coverage with split-aware mapping",
         "Automatic personal record detection",
         "Dual-axis progression charts (weight and volume)",
+        "Progress photos with pose-guided check-ins, on-device only",
         "Optional iCloud sync via Sign in with Apple",
         "JSON export and import with schema versioning",
         "Apple Health writes",
@@ -183,8 +184,11 @@
       <h3>Progression charts</h3>
       <p>Per-exercise dual-axis charts plot weight against volume across configurable ranges (4 weeks, 12 weeks, 6 months, all-time). The chart is the answer to "is what I'm doing actually working?" - which is the only question programming should be asking. First-launch and empty-filter views ship with explicit empty-state copy so the screen is never just blank.</p>
 
+      <h3>Progress photos</h3>
+      <p>The Progress tab has a Charts and Photos switch. The Photos side runs pose-by-pose check-ins through the front camera with a rule-of-thirds grid: pick up to nine poses from a curated set of twelve, and save partial check-ins when you only grab a few. The comparison board sets your earliest check-in against your latest with selectable bounds and your body-weight change leading the screen. Photos stay on the device and never appear in the iOS Photos app. An optional PIN or Face ID lock gates the tab and redacts the content in the app switcher. Export everything to a zip and restore it on a new phone with an additive, check-in-keyed merge, and set weekly, bi-weekly, or monthly check-in reminders.</p>
+
       <h3>Live Activity and Dynamic Island</h3>
-      <p>Rest timer is the hero. The Dynamic Island shows the countdown in compact and minimal states, deduped against music and other Live Activities so the timer is always the thing you see. The timer survives navigation, input, and force-foregrounding - only manual stop, app force-close, or starting the next set resets it.</p>
+      <p>Rest timer is the hero. The Dynamic Island shows the countdown in compact and minimal states, deduped against music and other Live Activities so the timer is always the thing you see. The timer survives navigation, input, and force-foregrounding - only manual stop, app force-close, or starting the next set resets it. When another app shrinks the island to its smallest state, the timer keeps a depleting ring and turns into a green "rest complete" check on its own, and a Time Sensitive notification fires when rest ends so the cue reaches you with the screen locked.</p>
 
       <h3>Local-first, with optional iCloud</h3>
       <p>Every set is stored on-device by default via SwiftData. Sign in with Apple unlocks optional iCloud sync across your own devices using a CloudKit V6 schema with optional to-many relationships. If sync hits an actionable failure, a root-level banner surfaces the error instead of leaving you in a fake-synced state. JSON export and import (schema v4, includes built routines) is always available - your data is never trapped.</p>

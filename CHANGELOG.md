@@ -5,6 +5,12 @@ A running log of meaningful changes to the Stack website. The iOS app's own rele
 ## Unreleased
 
 ### Added
+- `updates.html` - added v1.2.0 entry: progress photos (Photos tab with pose-by-pose front-camera check-ins, curated nine-pose grid, partial check-ins with placeholder silhouettes, beginning-to-latest comparison board with body-weight change, pinch-to-zoom drill-down), private and portable photo storage (on-device only, PIN or Face ID lock, app-switcher redaction, zip export and additive re-import, weekly/bi-weekly/monthly reminders), self-driving Dynamic Island rest-complete with a Time Sensitive rest-end notification, and the onboarding notification-priming step. Cross-references `Docs/releases/v1.2.0.md` in the Stack app repo.
+
+### Changed
+- `assets/config.js` - bumped displayed app version from 1.1.1 to 1.2.0.
+
+### Added
 - `updates.html` - added v1.1.1 entry: History calendar, personal record detection from normal sessions, 1RM test results in the day panel, Home condensed layout with color-coded frequency bars, Train flat pre-workout screen, and custom theme engine fix.
 
 ### Changed
