@@ -5,9 +5,12 @@ A running log of meaningful changes to the Stack website. The iOS app's own rele
 ## Unreleased
 
 ### Added
+- `updates.html` - added v1.3.0 entry: the muscle map (third Progress tab, front and back body heat map over a trailing three-week window, tap-to-zoom sub-muscle split, drill-through to contributing exercises), the three insight card types (cold region, within-group gap, opposing-pair imbalance), Lock Screen and Dynamic Island rest controls (+30s during rest, Repeat Previous Set during a set, hidden on an exercise's first set, configurable in Settings with a live preview), theme-tracking Live Activity, five new sub-muscle regions with a full library retag, refined app icon, and the rewritten privacy screen. Cross-references `Docs/releases/v1.3.0.md` in the Stack app repo.
 - `updates.html` - added v1.2.0 entry: progress photos (Photos tab with pose-by-pose front-camera check-ins, curated nine-pose grid, partial check-ins with placeholder silhouettes, beginning-to-latest comparison board with body-weight change, pinch-to-zoom drill-down), private and portable photo storage (on-device only, PIN or Face ID lock, app-switcher redaction, zip export and additive re-import, weekly/bi-weekly/monthly reminders), self-driving Dynamic Island rest-complete with a Time Sensitive rest-end notification, and the onboarding notification-priming step. Cross-references `Docs/releases/v1.2.0.md` in the Stack app repo.
 
 ### Changed
+- `assets/config.js` - bumped displayed app version from 1.2.0 to 1.3.0.
+- `assets/config.js`, `privacy.html`, `terms.html` - company name updated to the legal entity `Lauterstar Technologies, Inc.` in the copyright holder, the Privacy Policy opening, and the Terms liability clause. The Privacy Policy now names the entity once and defines "Lauterstar" as the short form, so later references stay readable. Brand usages in navigation, page titles, and structured data keep the short name.
 - `assets/config.js` - bumped displayed app version from 1.1.1 to 1.2.0.
 
 ### Added
