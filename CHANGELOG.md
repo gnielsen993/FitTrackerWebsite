@@ -4,6 +4,14 @@ A running log of meaningful changes to the Stack website. The iOS app's own rele
 
 ## Unreleased
 
+### Added
+- `terms.html` - a **Purchases and Subscriptions** section. The page had no subscription language of any kind: no mention of subscribe, purchase, refund, auto-renew, or billing. App Store Guideline 3.1.2 requires the terms to cover the subscription, and the app now links this page from the paywall itself, so this was a submission blocker. Covers the three products, that only lifetime is shareable through Family Sharing, that Apple handles all payment and refunds, that cancelling takes effect at the end of the paid period, that deleting the app does not cancel, and that a lapse removes paid features while keeping all of your data readable and exportable.
+- `privacy.html` - a **Purchases** section. Entitlement is resolved on device from the App Store receipt and stored on device, travelling only through the user's own iCloud if sync is on; it never reaches us and there is no account on our side holding it.
+
+### Changed
+- `privacy.html` - the usage-analytics event list is now accurate. It was materially stale **before** monetization, not just because of it: it claimed "the number of sets is the only event payload" while the guided 1RM events already sent the lift, the outcome, the delta percent and both targets, and `theme_changed` already sent the preset name. The list now also carries the paid-feature and paywall events. Verified against the `AnalyticsService` protocol rather than written from the plan.
+- `terms.html`, `privacy.html` - Last updated bumped to September 1, 2026.
+
 ### Fixed
 - `about.html`, `designkit.html`, `index.html` - the preset catalog is **35**, not 34, in all seven places that stated it. The claim was written on 2026-04-28, four days after the 35th preset landed in DesignKit, so it was false on the day it shipped and survived four months. This is the incident that motivated CLAUDE.md §9.25 and `scripts/check-public-claims.py`; the checker now passes. `updates.html:150` still says 34 and is deliberately left alone - it is a dated release entry, and rewriting one falsifies the trail (§9.16).
 - `about.html`, `llms.txt` - stopped naming **PantryPlanner** as a sibling product. It is dormant, roughly 28 Swift files, two commits, and has never shipped. Nothing was substituted in its place.
