@@ -6,7 +6,7 @@ A local-first iOS workout app for split logging, muscle coverage, and workout vi
 - iOS app: https://apps.apple.com/us/app/stack-gym-tracker/id6760980211
 - Free to download.
 - Built and operated by Lauterstar (https://lauterstar.com).
-- Part of the Lauterstar ecosystem alongside DesignKit, HabitTracker, and PantryPlanner.
+- Part of the Lauterstar ecosystem alongside DesignKit and HabitTracker.
 
 ## Key Pages
 - Home: https://stack.lauterstar.com/
