@@ -185,8 +185,8 @@ dd { margin: 0 0 var(--space-l); color: var(--muted); }
 .detail-lock img { transform: translateY(-66%); }
 .detail-plates { aspect-ratio: 1206 / 750; }
 .detail-plates img { transform: translateY(-59%); }
-.detail-adjustment { aspect-ratio: 1206 / 1260; }
-.detail-adjustment img { transform: translateY(-23.4%); }
+.detail-adjustment { aspect-ratio: 1206 / 1600; }
+.detail-adjustment img { transform: translateY(-13.2%); }
 .detail-open { display: flex; justify-content: space-between; gap: var(--space-m); padding: var(--space-s) 0; font-size: .85rem; font-weight: 600; }
 .detail-proof figcaption { margin: 0; }
 .routine-story, .pro-marketing .story { padding: var(--space-xxl) 0; }

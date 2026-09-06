@@ -1,3 +1,10 @@
+# Guided adjustment correction - September 6, 2026
+
+- Replaced the excessive curl-set recommendation with a fresh native capture of the corrected app flow. Shows sets per workout separately from the weekly projection.
+- Updated Pro copy to describe adding an exercise to another scheduled routine or previewing a small set increase, without implying a weekly target must be filled in one workout.
+- Verified all 40 page/viewport/appearance combinations, links, structured data and source-image hashes.
+- Coordinated with FitnessTracker v2.0.0 and the refreshed App Store collection and in-app Plan Insight scenes.
+
 # Layout refactor - September 6, 2026
 
 - Put readable set controls and the App Store badge in the first mobile screen.

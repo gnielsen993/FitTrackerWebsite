@@ -46,12 +46,14 @@
   },
   {
     "path": "assets/images/screenshots/adjustment.png",
-    "sha256": "838458d1e0cd92f0dda82e1c951293ebf535c97ffe1621b9ceadcbc5636298e4",
+    "sha256": "78e574f9870ff7dec12a1b1fb435472311e852947ec8e8668900ee49031b01d4",
     "dimensions": [
       1206,
       2622
     ],
-    "origin": "FitnessTracker/Marketing/AppStore-2.0/raw/iphone/adjustment.png"
+    "origin": "FitnessTracker/Marketing/AppStore-2.0/raw/iphone/adjustment.png",
+    "capturedOn": "2026-09-06",
+    "captureRun": "/tmp/StackHybridFinal.xcresult"
   },
   {
     "path": "assets/images/screenshots/lock-screen.png",
