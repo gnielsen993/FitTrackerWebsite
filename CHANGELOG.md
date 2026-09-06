@@ -1,3 +1,9 @@
+# Purchase support - September 6, 2026
+
+- Added a direct answer about optional Pro and eligible early-user access.
+- Updated restoration instructions to include Profile > Purchases.
+- Prepared alongside FitnessTracker v2.0.0; see its release log.
+
 # Guided adjustment correction - September 6, 2026
 
 - Replaced the excessive curl-set recommendation with a fresh native capture of the corrected app flow. Shows sets per workout separately from the weekly projection.
