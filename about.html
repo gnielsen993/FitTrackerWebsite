@@ -1,256 +1,59 @@
 <!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <title>About Stack - A Local-First iOS Workout Tracker for Lifters</title>
-  <meta name="description" content="Stack is a local-first iOS gym tracker for split logging, weekly muscle coverage, automatic personal records, and dual-axis progression charts. No accounts. No tracking. Built for lifters who train hard." />
-
-  <link rel="canonical" href="https://stack.lauterstar.com/about.html" />
-  <meta name="robots" content="index,follow,max-image-preview:large" />
-  <meta name="theme-color" content="#FAF7F0" media="(prefers-color-scheme: light)" />
-  <meta name="theme-color" content="#1C1B1A" media="(prefers-color-scheme: dark)" />
-
-  <meta property="og:site_name" content="Stack" />
-  <meta property="og:type" content="website" />
-  <meta property="og:locale" content="en_US" />
-  <meta property="og:title" content="About Stack - A Local-First iOS Workout Tracker for Lifters" />
-  <meta property="og:description" content="Why Stack exists, how it works, and who it's for. Local-first iOS gym tracker for split logging, muscle coverage, and progression." />
-  <meta property="og:url" content="https://stack.lauterstar.com/about.html" />
-  <meta property="og:image" content="https://stack.lauterstar.com/assets/images/icon-1024.png" />
-  <meta property="og:image:alt" content="Stack app icon" />
-
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="About Stack - A Local-First iOS Workout Tracker" />
-  <meta name="twitter:description" content="Why Stack exists, how it works, and who it's for." />
-  <meta name="twitter:image" content="https://stack.lauterstar.com/assets/images/icon-1024.png" />
-
-  <link rel="icon" href="assets/images/icon-1024.png" />
-  <link rel="apple-touch-icon" href="assets/images/icon-1024.png" />
-
-  <link rel="stylesheet" href="assets/styles.css" />
-  <script defer src="assets/config.js"></script>
-  <script defer src="assets/app.js"></script>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "AboutPage",
-    "name": "About Stack - A Local-First iOS Workout Tracker",
-    "url": "https://stack.lauterstar.com/about.html",
-    "isPartOf": { "@id": "https://stack.lauterstar.com/#site" },
-    "primaryImageOfPage": "https://stack.lauterstar.com/assets/images/icon-1024.png",
-    "mainEntity": {
-      "@type": "MobileApplication",
-      "name": "Stack - Gym Tracker",
-      "alternateName": "Stack",
-      "operatingSystem": "iOS 17+",
-      "applicationCategory": "HealthApplication",
-      "description": "Local-first iOS workout tracking with three-tap set logging, weekly muscle coverage, automatic personal records, and dual-axis progression charts.",
-      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-      "featureList": [
-        "Three-tap set logging with Weight, Pin, and Bodyweight modes",
-        "Weekly muscle coverage with split-aware mapping",
-        "Automatic personal record detection",
-        "Dual-axis progression charts (weight and volume)",
-        "Progress photos with pose-guided check-ins, on-device only",
-        "Optional iCloud sync via Sign in with Apple",
-        "JSON export and import with schema versioning",
-        "Apple Health writes",
-        "Live Activity and Dynamic Island timer",
-        "35-preset theme catalog across six families"
-      ]
-    }
-  }
-  </script>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Is Stack free?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. Stack is free to download on the App Store with no in-app purchases or subscriptions in version 1.0."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Does Stack work without an account?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. Stack is local-first by default - every set you log is stored on-device via SwiftData. Sign in with Apple is optional and only enables iCloud sync across your own devices."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Does Stack track me or sell my data?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "No. Stack contains no third-party analytics, no ad SDKs, and no telemetry on your training. There are no servers we own that store your sets."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can I export my data?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. Stack exports a versioned JSON file containing your routines, sessions, sets, and personal records. The same file can be re-imported on another device or after a fresh install."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What kind of lifter is Stack for?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Stack is designed for intermediate and advanced lifters running structured splits - push/pull/legs, upper/lower, bro splits, or custom routines. The muscle coverage engine assumes you train against a weekly volume target."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Does Stack support cardio, bodyweight, and machine work?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. The logger has Weight, Pin (selectorized), and Bodyweight modes, plus optional timed sets in MM:SS.CC for planks and isometrics. Cardio entries support distance and incline. Plate-loaded machines support a 'No bar' mode and an initial-resistance offset."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What devices does Stack run on?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "iPhone running iOS 17 or later. Live Activity and Dynamic Island features require a compatible iPhone model. iPad layout is supported."
-        }
-      }
-    ]
-  }
-  </script>
-</head>
-
-<body>
-  <a href="#main-content" class="skip-link">Skip to main content</a>
-
-  <div class="container">
-
-    <header class="nav">
-      <a class="brand" href="index.html" aria-label="Stack home">
-        <img class="brand-logo" src="assets/images/icon-1024.png" alt="" aria-hidden="true" />
-        <span class="brand-name" data-cfg="displayName">Stack</span>
-        <span class="brand-meta">Vol. I &middot; v<span data-cfg="appVersion">1.0</span></span>
-      </a>
-      <nav class="nav-links" aria-label="Primary">
-        <a class="nav-link" href="index.html">Home</a>
-        <a class="nav-link" href="about.html" aria-current="page">About</a>
-        <a class="nav-link" href="designkit.html">DesignKit</a>
-        <a class="nav-link" href="updates.html">Updates</a>
-        <a class="nav-link" href="press.html">Press</a>
-        <a class="nav-link" href="support.html">Support</a>
-        <a class="nav-link" href="https://lauterstar.com/apps.html">Lauterstar</a>
-      </nav>
-    </header>
-
-    <main id="main-content" class="doc">
-      <p class="eyebrow">About &middot; Stack &middot; Vol. I</p>
-      <h1>An iOS workout tracker that gets out of the way.</h1>
-      <p class="lede">Stack is a local-first gym tracker for lifters who train hard but have trouble sticking with logging. It is built around one belief: tracking only works if it never costs you a set.</p>
-
-      <p>Most workout apps bury you in setup screens, ad banners, premium paywalls, and account funnels before you ever reach a barbell. Stack inverts that. The first launch drops you straight into a logger you can use one-handed between sets. Your data lives on your device. There is no account to make, no email to verify, no upsell to dismiss.</p>
-
-      <p><a class="btn" href="https://apps.apple.com/us/app/stack-gym-tracker/id6760980211" target="_blank" rel="noopener" data-cfg="appStoreUrl">Download Stack on the App Store</a></p>
-
-      <h2>Why Stack exists</h2>
-      <p>The honest reason: the founder kept abandoning his own training logs. Spreadsheets, notebooks, three other gym apps - every one of them broke down somewhere between the locker room and the squat rack. The friction was always the same. Too many taps to start a set. Keyboard popping up to type a single number. App pestering you to upgrade in the middle of a working set. Cloud sync churning on a flaky gym Wi-Fi.</p>
-
-      <p>Stack was built to remove every one of those failures. Three-tap working sets. No keyboard during normal logging. No paywall. No tracking. No required network connection. Tracking that does not punish you for showing up.</p>
-
-      <h2>What's inside</h2>
-
-      <h3>Fast set logging</h3>
-      <p>The logger hub is full-width and has three modes - <strong>Weight</strong>, <strong>Pin</strong> (selectorized machines), and <strong>Bodyweight</strong>. Each mode autofills from your most recent set, so re-entering an exercise prefills the right starting numbers instead of falling back to a generic 45 &times; 10. The quick-adjust row trades typing for tapping: <code>+5</code> and <code>+1</code> on weight, <code>+1</code> on reps, the keyboard never has to come up. Optional timed sets accept <code>MM:SS.CC</code> formatting with an inline countdown for planks, dead-hangs, or sled drags. Per-entry Setup / Variant tags (Cable Station 1, Plate-Loaded, Smith) preserve a single canonical exercise while keeping each setup's progression separate.</p>
-
-      <h3>Routines and the train flow</h3>
-      <p>The routine builder treats target sets as a property of the routine, not the workout - so re-running a routine never asks the same question twice. Exercise rows are fully tappable across the whole row. Marking an exercise as Done auto-returns to the workout list. Undo keeps you on the detail screen so you can fix a typo without losing your place. A bottom Active Workout banner follows you to other tabs in case you wander off into Progress or Settings mid-session, and one tap drops you back into Train.</p>
-
-      <h3>Weekly muscle coverage</h3>
-      <p>This is the feature most other trackers don't have. Stack maps each set you log to the muscle <em>regions</em> it actually trains - upper chest, posterior delts, long-head triceps, mid traps - not just the broad muscle group. The weekly view compares your group totals against minimum-volume landmarks so imbalances stop hiding. If your push days are hammering anterior delts but skipping the rear, you will see it in cream and forest, not buried in a CSV.</p>
-
-      <h3>Personal records, found for you</h3>
-      <p>Every set is checked against your history. New records - top weight, top set volume, top single-rep estimate - surface automatically with a quiet badge. There is no leaderboard, no confetti animation, no streak guilt. The PR is a fact, not a status update.</p>
-
-      <h3>Progression charts</h3>
-      <p>Per-exercise dual-axis charts plot weight against volume across configurable ranges (4 weeks, 12 weeks, 6 months, all-time). The chart is the answer to "is what I'm doing actually working?" - which is the only question programming should be asking. First-launch and empty-filter views ship with explicit empty-state copy so the screen is never just blank.</p>
-
-      <h3>Progress photos</h3>
-      <p>The Progress tab has a Charts and Photos switch. The Photos side runs pose-by-pose check-ins through the front camera with a rule-of-thirds grid: pick up to nine poses from a curated set of twelve, and save partial check-ins when you only grab a few. The comparison board sets your earliest check-in against your latest with selectable bounds and your body-weight change leading the screen. Photos stay on the device and never appear in the iOS Photos app. An optional PIN or Face ID lock gates the tab and redacts the content in the app switcher. Export everything to a zip and restore it on a new phone with an additive, check-in-keyed merge, and set weekly, bi-weekly, or monthly check-in reminders.</p>
-
-      <h3>Live Activity and Dynamic Island</h3>
-      <p>Rest timer is the hero. The Dynamic Island shows the countdown in compact and minimal states, deduped against music and other Live Activities so the timer is always the thing you see. The timer survives navigation, input, and force-foregrounding - only manual stop, app force-close, or starting the next set resets it. When another app shrinks the island to its smallest state, the timer keeps a depleting ring and turns into a green "rest complete" check on its own, and a Time Sensitive notification fires when rest ends so the cue reaches you with the screen locked.</p>
-
-      <h3>Local-first, with optional iCloud</h3>
-      <p>Every set is stored on-device by default via SwiftData. Sign in with Apple unlocks optional iCloud sync across your own devices using a CloudKit V6 schema with optional to-many relationships. If sync hits an actionable failure, a root-level banner surfaces the error instead of leaving you in a fake-synced state. JSON export and import (schema v4, includes built routines) is always available - your data is never trapped.</p>
-
-      <h3>Themes and visual identity</h3>
-      <p>Stack ships with a 35-preset theme catalog organized into six families (Classic, Soft, Sweet, Bright, Moody, and Loud), all powered by the shared <a href="designkit.html">DesignKit</a> Swift Package. The default identity is "Balanced Luxury" - low saturation, calm density, with forest as the lead accent. No randomly chosen colors anywhere. Personality comes from layout and tone, not styling chaos.</p>
-
-      <h2>Who Stack is for</h2>
-      <ul>
-        <li><strong>Intermediate and advanced lifters</strong> running structured splits - push/pull/legs, upper/lower, bro splits, or custom routines.</li>
-        <li><strong>People who quit other trackers</strong> because the friction was too high. Stack is engineered to disappear during a set.</li>
-        <li><strong>Lifters who care about privacy.</strong> No accounts, no analytics on your sets, no servers we own. Optional iCloud is end-to-end via Apple's stack.</li>
-        <li><strong>iPhone owners on iOS 17 or later</strong> who want Live Activity and Dynamic Island integration that actually works.</li>
-      </ul>
-
-      <p>Stack is probably <em>not</em> for: complete beginners who need a coached program, group-class workouts where logging is rep-by-rep voice, or people looking for a social feed.</p>
-
-      <h2>The privacy posture</h2>
-      <p>Stack collects no analytics on your training. There are no third-party SDKs reporting back to ad networks. There is no server we operate that holds your sets. The optional iCloud sync uses Apple's CloudKit running under your own Apple ID - Apple sees encrypted blobs, we see nothing. Apple Health writes are opt-in and one-way (Stack writes workouts and reps; it does not read your health data). Read the full <a href="privacy.html">Privacy Policy</a> for specifics.</p>
-
-      <h2>Part of an ecosystem</h2>
-      <p>Stack is one app in a broader local-first ecosystem powered by <a href="designkit.html">DesignKit</a> - a shared Swift Package of tokens, components, themes, and chart styles. Sibling apps (HabitTracker for binary habits) share the same Balanced Luxury identity, the same accessibility floor, and the same privacy posture. Build one design language; use it everywhere.</p>
-
-      <h2>Frequently asked questions</h2>
-
-      <h3>Is Stack free?</h3>
-      <p>Yes. Stack is free to download on the App Store with no in-app purchases or subscriptions in version 1.0.</p>
-
-      <h3>Does Stack work without an account?</h3>
-      <p>Yes. Stack is local-first by default - every set you log is stored on-device via SwiftData. Sign in with Apple is optional and only enables iCloud sync across your own devices.</p>
-
-      <h3>Does Stack track me or sell my data?</h3>
-      <p>No. Stack contains no third-party analytics, no ad SDKs, and no telemetry on your training. There are no servers we own that store your sets.</p>
-
-      <h3>Can I export my data?</h3>
-      <p>Yes. Stack exports a versioned JSON file containing your routines, sessions, sets, and personal records. The same file can be re-imported on another device or after a fresh install.</p>
-
-      <h3>Does Stack support cardio, bodyweight, and machine work?</h3>
-      <p>Yes. The logger has Weight, Pin (selectorized), and Bodyweight modes, plus optional timed sets in <code>MM:SS.CC</code>. Cardio entries support distance and incline. Plate-loaded machines support a "No bar" mode and an initial-resistance offset.</p>
-
-      <h3>What devices does Stack run on?</h3>
-      <p>iPhone running iOS 17 or later. Live Activity and Dynamic Island features require a compatible iPhone model. iPad layout is supported.</p>
-
-      <h3>How do I get help?</h3>
-      <p>Email <a data-cfg="supportEmail" href="mailto:">support</a>. We read everything. If you're reporting a bug, mention your iOS version and what you were doing when it happened.</p>
-
-      <p style="margin-top: var(--space-xl);">
-        <a class="btn" href="https://apps.apple.com/us/app/stack-gym-tracker/id6760980211" target="_blank" rel="noopener" data-cfg="appStoreUrl">Download Stack on the App Store</a>
-        <a class="btn ghost" href="updates.html">See what shipped &rarr;</a>
-      </p>
-    </main>
-
-    <footer class="footer" role="contentinfo">
-      <div>&copy; <span data-cfg="copyrightYear">2026</span> <span data-cfg="copyrightHolder">Lauterstar</span></div>
-      <ul class="footer-links">
-        <li><a href="about.html">About</a></li>
-        <li><a href="privacy.html">Privacy</a></li>
-        <li><a href="terms.html">Terms</a></li>
-        <li><a href="support.html">Support</a></li>
-        <li><a href="press.html">Press</a></li>
-      </ul>
-    </footer>
-  </div>
-</body>
-</html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About Stack | Build a record of getting stronger</title>
+<meta name="description" content="Bring your last workout into your next one. Stack helps lifters keep routines ready, see progress and spend less time logging.">
+<link rel="canonical" href="https://stack.lauterstar.com/about.html">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta property="og:site_name" content="Stack">
+<meta property="og:type" content="website">
+<meta property="og:title" content="About Stack | Build a record of getting stronger">
+<meta property="og:description" content="Bring your last workout into your next one. Stack helps lifters keep routines ready, see progress and spend less time logging.">
+<meta property="og:url" content="https://stack.lauterstar.com/about.html">
+<meta property="og:image" content="https://stack.lauterstar.com/assets/images/icon-1024.png">
+<meta property="og:image:alt" content="Stack's stacked weight plate icon">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="About Stack | Build a record of getting stronger">
+<meta name="twitter:description" content="Bring your last workout into your next one. Stack helps lifters keep routines ready, see progress and spend less time logging.">
+<meta name="twitter:image" content="https://stack.lauterstar.com/assets/images/icon-1024.png">
+<link rel="icon" href="assets/images/icon-1024.png">
+<link rel="apple-touch-icon" href="assets/images/icon-1024.png">
+<link rel="stylesheet" href="assets/styles.css">
+<script defer src="assets/config.js"></script>
+<script defer src="assets/app.js"></script>
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "About Stack | Build a record of getting stronger", "description": "Bring your last workout into your next one. Stack helps lifters keep routines ready, see progress and spend less time logging.", "url": "https://stack.lauterstar.com/about.html", "isPartOf": {"@id": "https://stack.lauterstar.com/#website"}, "about": {"@id": "https://stack.lauterstar.com/#app"}, "inLanguage": "en-US"}]</script>
+</head><body><!-- THESIS: Sell a better training session, then show the real app that makes it possible.
+OWN-WORLD: Cream and charcoal, Forest accents, the approved plate mark, system type and honest native screenshots.
+STORY: Less logging friction, visible progress, an optional next step with Pro, then download.
+FIRST VIEWPORT: A large outcome-led headline and download action beside the real workout screen.
+FORM: A product story with alternating proof and short copy. Existing brand, code-led implementation.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance -->
+<a class="skip-link" href="#main-content">Skip to content</a>
+<div class="container">
+<header class="site-header"><a class="brand" href="index.html" aria-label="Stack home"><img src="assets/images/icon-1024.png" width="40" height="40" alt=""><span>Stack</span></a>
+<nav aria-label="Main navigation"><a href="index.html#why-stack">Why Stack</a><a href="pro.html">Stack Pro</a><a href="designkit.html">Make it yours</a><a href="support.html">Support</a>
+</nav><a class="button primary" href="https://apps.apple.com/us/app/stack-gym-tracker/id6760980211" data-cfg="appStoreUrl">Download Stack<span aria-hidden="true"> ↗</span></a>
+</header>
+<main id="main-content" class="doc">
+<h1>A record of<br>getting stronger.</h1>
+<p class="lead">Stack helps you bring what you learned last workout into the next one.</p>
+<p>You put time into training. Your workout log should give you something useful back: the weight you used last time, the progress you might have missed and a clearer view of your week.</p>
+<h2>Built around the time between sets.</h2>
+<p>Keep a routine ready, record weight and reps, and return to your workout. When you finish, revisit your history and see how your strength is changing.</p>
+<h2>Start free. Add direction with Pro.</h2>
+<p>Workout logging, routines, history, basic trends and the muscle map are free. <a href="pro.html">Stack Pro</a> adds suggested next-set targets, plate calculations, weekly plan adjustments, progress photos and other optional tools.</p>
+<h2>Your record stays with you.</h2>
+<p>Log offline and export your training data. Start without an account, or choose optional iCloud sync. Optional usage analytics and crash reports can be turned off in Profile → Privacy &amp; Data. <a href="privacy.html">Read how your data is handled</a>.</p>
+<h2>Made by Lauterstar.</h2>
+<p>Stack is developed by Lauterstar Technologies, Inc. for iPhone and iPad. Our aim is simple: help you spend less effort on logging and get more use from the record you keep.</p>
+<p>Have a question or something that would make your next workout easier? <a href="support.html">Get in touch</a>.</p><a class="button primary" href="https://apps.apple.com/us/app/stack-gym-tracker/id6760980211" data-cfg="appStoreUrl">Download Stack<span aria-hidden="true"> ↗</span></a>
+</main>
+<footer class="site-footer">
+<div class="footer-brand"><a class="brand" href="index.html">Stack</a>
+<p>Build a record of getting stronger.</p><small>© 2026 Lauterstar Technologies, Inc.</small>
+</div>
+<nav aria-label="More about Stack"><a href="about.html">About Stack</a><a href="updates.html">Updates</a><a href="press.html">Press</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a>
+</nav>
+</footer>
+</div></body></html>

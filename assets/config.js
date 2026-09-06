@@ -4,13 +4,13 @@
 window.SITE_CONFIG = Object.freeze({
   appName: "Stack - Gym Tracker",
   displayName: "Stack",
-  appVersion: "1.3.0",
+  appVersion: "2.0.0",
   appStoreUrl: "https://apps.apple.com/us/app/stack-gym-tracker/id6760980211",
   supportEmail: "support@lauterstar.com",
   copyrightHolder: "Lauterstar Technologies, Inc.",
   copyrightYear: 2026,
   bundleId: "com.lauterstar.fitnesstracker",
-  ecosystem: ["DesignKit", "HabitTracker", "Stack", "PantryPlanner"]
+  productPage: "https://stack.lauterstar.com/"
 });
 
 document.addEventListener("DOMContentLoaded", () => {

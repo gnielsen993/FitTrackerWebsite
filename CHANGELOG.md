@@ -1,3 +1,12 @@
+# 2.0 website preparation - September 6, 2026
+
+- Reworked the site around less time logging, visible progress and a clearer next workout, with actual Stack 2.0 screenshots and the new plate icon.
+- Added a Pro page explaining free versus paid access and monthly, yearly and lifetime choices.
+- Replaced the DesignKit presentation with Make it yours and a real screenshot theme preview.
+- Updated product metadata, social copy, sitemap and llms.txt. Removed inaccurate no-analytics, no-purchases and older-device claims.
+- Revised privacy and purchase disclosures from app source. Material policy edits are listed in RELEASE-2.0.md for approval before publication.
+- Coordinated with FitnessTracker Docs/releases/v2.0.0.md. Prepared for release, not published.
+
 # Changelog
 
 A running log of meaningful changes to the Stack website. The iOS app's own release log lives in the app repo at `Docs/releases/`. When a website change is tied to a specific app version, cross-reference the two.

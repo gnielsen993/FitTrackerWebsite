@@ -1,88 +1,32 @@
-# Stack Website
+# Stack website
 
-Public website for **Stack - Gym Tracker** - display name **Stack** - a local-first SwiftUI iOS app for split logging, muscle coverage tracking, and workout visuals. Part of a broader ecosystem (DesignKit + HabitTracker + Stack + PantryPlanner) that shares a luxury design language.
+Static marketing website for Stack - Gym Tracker, built with HTML, CSS and small vanilla JavaScript files. No build step or runtime dependencies.
 
-This repository hosts the static landing page along with required legal pages (Privacy Policy and Terms of Service). The site is intentionally lightweight and framework-free - no build step, no bundler, no JS framework.
+The 2.0 site sells less time logging, visible lifting progress and a clearer next workout. Features and actual app screenshots provide evidence for those benefits.
 
----
+## Run locally
 
-## Pages
-
-- **Home** (`index.html`)
-  Marketing landing page describing Stack's core features.
-
-- **Privacy Policy** (`privacy.html`)
-  Explains how user data is collected and used. (Stack is local-first - data stays on device.)
-
-- **Terms of Service** (`terms.html`)
-  Rules and conditions for using the app and website.
-
-- **Updates** (`updates.html`)
-  Public release log mirroring the iOS app's internal `Docs/releases/`.
-
----
-
-## Project Structure
-
-```
-/
-├── index.html
-├── privacy.html
-├── terms.html
-├── updates.html
-├── CHANGELOG.md
-└── assets/
-    ├── styles.css
-    ├── config.js
-    ├── app.js
-    └── images/
+```sh
+python3 -m http.server 8110 --bind 127.0.0.1
 ```
 
----
+Open http://127.0.0.1:8110/. Publication remains separate from local preview. See RELEASE-2.0.md for pending release and policy decisions.
 
-## Configuration
+## Content
 
-Global site metadata (App Store URL, support email, current app version) is defined in:
+- index.html: main product story and common questions.
+- pro.html: paid benefits and monthly, yearly and lifetime access.
+- designkit.html: Make it yours, preserving the established URL.
+- about.html, support.html and press.html: product information, help and assets.
+- privacy.html and terms.html: data and purchase disclosures.
+- updates.html: historical releases.
 
-```
-assets/config.js
-```
+## Shared values
 
-Edit this single file rather than hardcoding values across pages.
+assets/config.js supplies current app metadata and updates data-cfg links at runtime. HTML also includes complete links and readable text for visitors without JavaScript and for crawlers. Keep fallback values synchronized when config changes. All styling lives in assets/styles.css. Colors and repeated dimensions use CSS variables.
 
----
+Images have provenance in assets/images/PROVENANCE.md and provenance.json. Screenshots are native captures with unchanged pixels and proportions. Product source of truth: FitnessTracker/Docs/AppStoreListing.md and the app's actual behavior.
 
-## Design
+## Checks
 
-The website's visual identity echoes the Stack iOS app's **Balanced Luxury** theme: warm cream backgrounds in light mode, charcoal in dark mode, accents constrained to forest / navy / maroon / walnut / stone. Colors are exposed as CSS custom properties on `:root` - see `assets/styles.css`.
-
-Light/dark switching uses `prefers-color-scheme` to match the app's behavior.
-
----
-
-## Development
-
-No build step. Open any `.html` file directly in a browser, or serve locally with any static server:
-
-```bash
-python3 -m http.server 8000
-# then visit http://localhost:8000
-```
-
----
-
-## Legal
-
-The Terms of Service and Privacy Policy included in this repository are templates and may require review or modification to comply with applicable laws and regulations.
-
----
-
-## Changelog
-
-See [`CHANGELOG.md`](CHANGELOG.md) for a running log of meaningful changes. The iOS app's own release log lives in the app repo at `Docs/releases/` - when a website change is tied to a specific app version, cross-reference the two.
-
----
-
-## AI Agent Conventions
-
-Project rules for AI tooling live in [`CLAUDE.md`](CLAUDE.md) (and mirrored in [`AGENTS.md`](AGENTS.md)). Read those before contributing via Claude Code, Codex, or similar tools.
+Exercise downloads, theme controls, FAQ disclosure, keyboard focus and internal links. Check all pages at 375px and desktop widths, in light and dark. Keep search descriptions, visible copy, JSON-LD, llms.txt and sitemap consistent. Follow STYLE.md.

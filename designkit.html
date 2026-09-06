@@ -1,151 +1,77 @@
 <!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>DesignKit - The system underneath Stack.</title>
-  <meta name="description" content="DesignKit is the shared design language behind Stack - Gym Tracker - tokens, themeable components, and a 35-preset theme catalog with full user customization." />
-  <link rel="canonical" href="https://stack.lauterstar.com/designkit.html" />
-  <meta name="robots" content="index,follow,max-image-preview:large" />
-  <meta name="theme-color" content="#FAF7F0" media="(prefers-color-scheme: light)" />
-  <meta name="theme-color" content="#1C1B1A" media="(prefers-color-scheme: dark)" />
-
-  <meta property="og:site_name" content="Stack" />
-  <meta property="og:type" content="website" />
-  <meta property="og:locale" content="en_US" />
-  <meta property="og:title" content="DesignKit - The system underneath Stack." />
-  <meta property="og:description" content="The shared design language behind Stack - tokens, themeable components, and a 35-preset theme catalog with full user customization." />
-  <meta property="og:url" content="https://stack.lauterstar.com/designkit.html" />
-  <meta property="og:image" content="https://stack.lauterstar.com/assets/images/icon-1024.png" />
-  <meta property="og:image:alt" content="Stack app icon" />
-
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="DesignKit - Stack" />
-  <meta name="twitter:description" content="Tokens, themeable components, and a 35-preset theme catalog." />
-  <meta name="twitter:image" content="https://stack.lauterstar.com/assets/images/icon-1024.png" />
-
-  <link rel="icon" href="assets/images/icon-1024.png" />
-  <link rel="apple-touch-icon" href="assets/images/icon-1024.png" />
-  <link rel="stylesheet" href="assets/styles.css" />
-  <script defer src="assets/config.js"></script>
-  <script defer src="assets/app.js"></script>
-  <script defer src="assets/theme-demo.js"></script>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "DesignKit - The system underneath Stack",
-    "description": "DesignKit is the shared design language behind Stack - tokens, themeable components, and a 35-preset theme catalog.",
-    "url": "https://stack.lauterstar.com/designkit.html",
-    "isPartOf": { "@id": "https://stack.lauterstar.com/#site" },
-    "about": { "@id": "https://stack.lauterstar.com/#org" },
-    "inLanguage": "en-US"
-  }
-  </script>
-</head>
-<body>
-  <a href="#main-content" class="skip-link">Skip to main content</a>
-  <div class="container">
-
-    <header class="nav">
-      <a class="brand" href="index.html" aria-label="Stack home">
-        <img class="brand-logo" src="assets/images/icon-1024.png" alt="" aria-hidden="true" />
-        <span class="brand-name" data-cfg="displayName">Stack</span>
-        <span class="brand-meta">Vol. I &middot; v<span data-cfg="appVersion">1.0</span></span>
-      </a>
-      <nav class="nav-links" aria-label="Primary">
-        <a class="nav-link" href="index.html">Home</a>
-        <a class="nav-link" href="about.html">About</a>
-        <a class="nav-link" href="designkit.html" aria-current="page">DesignKit</a>
-        <a class="nav-link" href="updates.html">Updates</a>
-        <a class="nav-link" href="press.html">Press</a>
-        <a class="nav-link" href="support.html">Support</a>
-        <a class="nav-link" href="https://lauterstar.com/apps.html">Lauterstar</a>
-      </nav>
-    </header>
-
-    <main id="main-content" class="doc">
-      <p class="eyebrow">Appendix A &middot; DesignKit &middot; Swift Package</p>
-      <h1>The system underneath.</h1>
-      <p class="lede">DesignKit is a Swift Package that defines one design language for the whole ecosystem - tokens, components, and presets. Stack is the first app shipping against it.</p>
-
-      <h2>Pick a theme. Watch it land.</h2>
-      <p>A curated slice of the catalog - leading with the loud ones. Same card, same button, same badge. Different identity each time, driven entirely by tokens.</p>
-
-      <div class="dk-demo" aria-live="polite">
-        <div class="dk-controls">
-          <div class="dk-swatches" role="group" aria-label="Theme presets"></div>
-          <div class="dk-mode" role="group" aria-label="Color scheme">
-            <button type="button" data-mode="light" aria-pressed="true">Light</button>
-            <button type="button" data-mode="dark" aria-pressed="false">Dark</button>
-          </div>
-          <p id="dk-current">Vapor &middot; Loud &middot; Light</p>
-        </div>
-
-        <div class="dk-card">
-          <p class="dk-card-eyebrow">Today &middot; Push Day</p>
-          <h4>Bench Press - 185 &times; 5</h4>
-          <p>Three sets logged. Rest timer running. The set you just did is a personal record.</p>
-          <div class="dk-card-row">
-            <span class="dk-badge">PR &check;</span>
-            <button class="dk-button" type="button">Log Next Set</button>
-          </div>
-        </div>
-
-        <div class="dk-tokens">
-          <div class="dk-token" id="token-bg">
-            <span class="dk-token-label">Background</span>
-            <span class="dk-token-value">
-              <span class="dk-token-chip"></span>
-              <span class="dk-token-hex">#FAF7F0</span>
-            </span>
-          </div>
-          <div class="dk-token" id="token-surface">
-            <span class="dk-token-label">Surface</span>
-            <span class="dk-token-value">
-              <span class="dk-token-chip"></span>
-              <span class="dk-token-hex">#FFFFFF</span>
-            </span>
-          </div>
-          <div class="dk-token" id="token-accent">
-            <span class="dk-token-label">Accent</span>
-            <span class="dk-token-value">
-              <span class="dk-token-chip"></span>
-              <span class="dk-token-hex">#2F5D3A</span>
-            </span>
-          </div>
-          <div class="dk-token" id="token-text">
-            <span class="dk-token-label">Text</span>
-            <span class="dk-token-value">
-              <span class="dk-token-chip"></span>
-              <span class="dk-token-hex">#1C1B1A</span>
-            </span>
-          </div>
-        </div>
-      </div>
-
-      <h2>The catalog goes deeper.</h2>
-      <p>Seven presets in the preview above. Thirty-four in the full catalog, sorted into six personalities.</p>
-      <p><strong>Classic</strong> - Forest, Navy, Maroon, Walnut, Stone. Quiet anchors. <strong>Sweet</strong> - Sakura, Bubblegum, Mint. Soft and warm. <strong>Bright</strong> - Solar, Citrus, Lagoon. High-contrast, high-energy. <strong>Soft</strong> - Cream, Linen, Mist. Low-contrast and easy on the eyes. <strong>Moody</strong> - Nord, Dracula, Gruvbox, Carbon, Midnight. Editor-grade dark. <strong>Loud</strong> - Vapor, Synth, Hazard, Acid. Themes that pick a fight with restraint.</p>
-      <p>Beyond the catalog, the four-anchor override lets users build their own. Pick a background, a surface, an accent, and a text color - DesignKit derives the rest with contrast checks, so even a chaotic theme stays legible.</p>
-
-      <h2>The design philosophy.</h2>
-      <p>The contract is the tokens. Every color, type ramp, spacing step, corner radius, and motion curve is a named variable resolved at runtime. Components - <code>DKCard</code>, <code>DKButton</code>, <code>DKBadge</code>, <code>DKThemePicker</code> - never hardcode anything; they read from the contract. Switch a preset and every screen, every chart, every widget reflows in lockstep. No stray hex values. No drifted padding. No surprises.</p>
-      <p>That's how one team ships apps that feel like one premium product instead of a kit-bashed family. Tokens are the contract. The apps are the voices.</p>
-      <p>It's also the customization engine. The catalog ships thirty-four hand-tuned presets across six categories - Classic, Sweet, Bright, Soft, Moody, Loud - and a four-anchor override lets a user define their own theme. Pick four colors; DesignKit extrapolates the rest with contrast checks baked in, so a wild theme still has legible text and readable charts.</p>
-      <p>DesignKit ships inside Stack first. Follow the app to follow the system.</p>
-    </main>
-
-    <footer class="footer" role="contentinfo">
-      <div>&copy; <span data-cfg="copyrightYear">2026</span> <span data-cfg="copyrightHolder">Lauterstar</span></div>
-      <ul class="footer-links">
-        <li><a href="privacy.html">Privacy</a></li>
-        <li><a href="terms.html">Terms</a></li>
-        <li><a href="support.html">Support</a></li>
-        <li><a href="press.html">Press</a></li>
-      </ul>
-    </footer>
-  </div>
-</body>
-</html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Make it yours | Stack gym tracker themes</title>
+<meta name="description" content="Make your workout log feel like yours. Start with five free classic themes, or add Stack Pro for more colors and custom appearance controls.">
+<link rel="canonical" href="https://stack.lauterstar.com/designkit.html">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta property="og:site_name" content="Stack">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Make it yours | Stack gym tracker themes">
+<meta property="og:description" content="Make your workout log feel like yours. Start with five free classic themes, or add Stack Pro for more colors and custom appearance controls.">
+<meta property="og:url" content="https://stack.lauterstar.com/designkit.html">
+<meta property="og:image" content="https://stack.lauterstar.com/assets/images/icon-1024.png">
+<meta property="og:image:alt" content="Stack's stacked weight plate icon">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Make it yours | Stack gym tracker themes">
+<meta name="twitter:description" content="Make your workout log feel like yours. Start with five free classic themes, or add Stack Pro for more colors and custom appearance controls.">
+<meta name="twitter:image" content="https://stack.lauterstar.com/assets/images/icon-1024.png">
+<link rel="icon" href="assets/images/icon-1024.png">
+<link rel="apple-touch-icon" href="assets/images/icon-1024.png">
+<link rel="stylesheet" href="assets/styles.css">
+<script defer src="assets/config.js"></script>
+<script defer src="assets/app.js"></script>
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Make it yours | Stack gym tracker themes", "description": "Make your workout log feel like yours. Start with five free classic themes, or add Stack Pro for more colors and custom appearance controls.", "url": "https://stack.lauterstar.com/designkit.html", "isPartOf": {"@id": "https://stack.lauterstar.com/#website"}, "about": {"@id": "https://stack.lauterstar.com/#app"}, "inLanguage": "en-US"}]</script>
+</head><body><!-- THESIS: Sell a better training session, then show the real app that makes it possible.
+OWN-WORLD: Cream and charcoal, Forest accents, the approved plate mark, system type and honest native screenshots.
+STORY: Less logging friction, visible progress, an optional next step with Pro, then download.
+FIRST VIEWPORT: A large outcome-led headline and download action beside the real workout screen.
+FORM: A product story with alternating proof and short copy. Existing brand, code-led implementation.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance -->
+<a class="skip-link" href="#main-content">Skip to content</a>
+<div class="container">
+<header class="site-header"><a class="brand" href="index.html" aria-label="Stack home"><img src="assets/images/icon-1024.png" width="40" height="40" alt=""><span>Stack</span></a>
+<nav aria-label="Main navigation"><a href="index.html#why-stack">Why Stack</a><a href="pro.html">Stack Pro</a><a href="designkit.html" aria-current="page">Make it yours</a><a href="support.html">Support</a>
+</nav><a class="button primary" href="https://apps.apple.com/us/app/stack-gym-tracker/id6760980211" data-cfg="appStoreUrl">Download Stack<span aria-hidden="true"> ↗</span></a>
+</header>
+<main id="main-content" class="marketing">
+<section class="page-intro">
+<h1>Make it yours.</h1>
+<p class="lead">The app you open every workout should feel like your app.</p>
+<p>Start with five classic themes, included free. Explore more looks and custom appearance controls with Stack Pro.</p>
+</section>
+<section class="theme-explorer" aria-labelledby="theme-title">
+<div class="theme-copy">
+<h2 id="theme-title">Same workout.<br>Different personality.</h2>
+<p>Choose a look to preview an actual Stack screen.</p>
+<div class="theme-options" role="group" aria-label="Preview an app theme"><button type="button" data-theme="forest" aria-pressed="true">Forest <span>Free</span></button><button type="button" data-theme="dracula" aria-pressed="false">Dracula <span>Pro</span></button><button type="button" data-theme="barbie" aria-pressed="false">Barbie <span>Pro</span></button>
+</div>
+<p id="theme-description" aria-live="polite">Forest: a clean dark look with a teal accent. Included free.</p>
+<p class="fine">Previews show dark appearance. Theme changes happen in the app.</p><noscript>
+<p>The Forest preview is shown. Enable JavaScript to switch previews.</p></noscript>
+</div>
+<figure class="app-shot"><img id="theme-preview" src="assets/images/screenshots/home.png" width="1206" height="2622" alt="Stack Home screen in the Forest dark theme" decoding="async"><figcaption>Actual Stack screen with example training data.</figcaption>
+</figure>
+</section>
+<section class="personal-teaser">
+<h2>Find your everyday look.</h2>
+<div>
+<p>Forest, Navy, Maroon, Walnut and Stone are included free. Pro adds softer palettes, brighter colors, deeper dark themes and controls to make your own.</p>
+<p>Light or dark, your workouts and familiar controls stay in place.</p><a class="button primary" href="pro.html">Explore Stack Pro →</a>
+</div>
+</section>
+<section class="closing">
+<h2>Your next workout.<br>A little less guesswork.</h2>
+<p>Start logging free. Add Pro when you want more direction.</p><a class="button primary" href="https://apps.apple.com/us/app/stack-gym-tracker/id6760980211" data-cfg="appStoreUrl">Download Stack<span aria-hidden="true"> ↗</span></a>
+<p class="fine">For iPhone and iPad. Optional in-app purchases.</p>
+</section>
+</main>
+<footer class="site-footer">
+<div class="footer-brand"><a class="brand" href="index.html">Stack</a>
+<p>Build a record of getting stronger.</p><small>© 2026 Lauterstar Technologies, Inc.</small>
+</div>
+<nav aria-label="More about Stack"><a href="about.html">About Stack</a><a href="updates.html">Updates</a><a href="press.html">Press</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a>
+</nav>
+</footer>
+</div></body></html>

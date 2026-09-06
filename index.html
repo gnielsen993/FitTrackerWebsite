@@ -1,255 +1,144 @@
 <!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <title>Stack - Gym Tracker - Log sets in seconds. See the story unfold.</title>
-  <meta name="description" content="A local-first iOS workout app for split logging, muscle coverage, and workout visuals. No accounts. No tracking." />
-
-  <link rel="canonical" href="https://stack.lauterstar.com/" />
-  <meta name="robots" content="index,follow,max-image-preview:large" />
-  <meta name="theme-color" content="#FAF7F0" media="(prefers-color-scheme: light)" />
-  <meta name="theme-color" content="#1C1B1A" media="(prefers-color-scheme: dark)" />
-
-  <meta property="og:site_name" content="Stack" />
-  <meta property="og:type" content="website" />
-  <meta property="og:locale" content="en_US" />
-  <meta property="og:title" content="Stack - Gym Tracker - Log sets in seconds. See the story unfold." />
-  <meta property="og:description" content="A local-first iOS workout app for split logging, muscle coverage, and workout visuals." />
-  <meta property="og:url" content="https://stack.lauterstar.com/" />
-  <meta property="og:image" content="https://stack.lauterstar.com/assets/images/icon-1024.png" />
-  <meta property="og:image:alt" content="Stack app icon" />
-
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Stack - Gym Tracker" />
-  <meta name="twitter:description" content="Log sets in seconds. See the story unfold." />
-  <meta name="twitter:image" content="https://stack.lauterstar.com/assets/images/icon-1024.png" />
-
-  <link rel="icon" href="assets/images/icon-1024.png" />
-  <link rel="apple-touch-icon" href="assets/images/icon-1024.png" />
-
-  <link rel="stylesheet" href="assets/styles.css" />
-  <script defer src="assets/config.js"></script>
-  <script defer src="assets/app.js"></script>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "@id": "https://stack.lauterstar.com/#org",
-        "name": "Lauterstar",
-        "url": "https://lauterstar.com/"
-      },
-      {
-        "@type": "WebSite",
-        "@id": "https://stack.lauterstar.com/#site",
-        "url": "https://stack.lauterstar.com/",
-        "name": "Stack - Gym Tracker",
-        "publisher": { "@id": "https://stack.lauterstar.com/#org" },
-        "inLanguage": "en-US"
-      },
-      {
-        "@type": "MobileApplication",
-        "name": "Stack - Gym Tracker",
-        "alternateName": "Stack",
-        "operatingSystem": "iOS",
-        "applicationCategory": "HealthApplication",
-        "description": "Local-first workout tracking with split logging, muscle coverage, and workout visuals.",
-        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-        "downloadUrl": "https://apps.apple.com/us/app/stack-gym-tracker/id6760980211",
-        "publisher": { "@id": "https://stack.lauterstar.com/#org" }
-      }
-    ]
-  }
-  </script>
-</head>
-
-<body>
-  <a href="#main-content" class="skip-link">Skip to main content</a>
-
-  <div class="container">
-
-    <header class="nav">
-      <a class="brand" href="index.html" aria-label="Stack home">
-        <img class="brand-logo" src="assets/images/icon-1024.png" alt="" aria-hidden="true" />
-        <span class="brand-name" data-cfg="displayName">Stack</span>
-        <span class="brand-meta">Vol. I &middot; v<span data-cfg="appVersion">1.0</span></span>
-      </a>
-
-      <nav class="nav-links" aria-label="Primary">
-        <a class="nav-link" href="index.html" aria-current="page">Home</a>
-        <a class="nav-link" href="about.html">About</a>
-        <a class="nav-link" href="designkit.html">DesignKit</a>
-        <a class="nav-link" href="updates.html">Updates</a>
-        <a class="nav-link" href="press.html">Press</a>
-        <a class="nav-link" href="support.html">Support</a>
-        <a class="nav-link" href="https://lauterstar.com/apps.html">Lauterstar</a>
-      </nav>
-    </header>
-
-    <main id="main-content" class="hero">
-
-      <section>
-        <div class="hero-split">
-          <div class="hero-text">
-            <h1 class="h1">
-              Log sets in<br />seconds.<br />
-              See the story<br />unfold.
-            </h1>
-
-            <p class="sub">
-              An iOS app for lifters who train hard but have trouble sticking with tracking. Local-first, no accounts, no tracking - just your sets, your splits, and the progression they describe.
-            </p>
-
-            <div class="cta-row">
-              <a class="btn appstore" href="https://apps.apple.com/us/app/stack-gym-tracker/id6760980211" target="_blank" rel="noopener" data-cfg="appStoreUrl" aria-label="Download Stack on the App Store">
-                <img src="assets/images/app-store-badge.svg" alt="Download on the App Store" />
-                <span class="visually-hidden">Download on the App Store</span>
-              </a>
-              <a class="btn ghost" href="#features">What's inside</a>
-            </div>
-
-            <p class="small">
-              Questions? Email
-              <a data-cfg="supportEmail" href="mailto:">support</a>.
-            </p>
-          </div>
-
-          <div class="hero-phone">
-            <div class="phone-frame">
-              <img src="assets/images/screenshots/home.png" alt="Stack home screen showing weekly consistency, today's logged workout, and weekly muscle coverage" />
-            </div>
-          </div>
-        </div>
-
-        <div id="features" class="grid" role="region" aria-labelledby="features-heading">
-          <h2 id="features-heading" class="visually-hidden">App Features</h2>
-
-          <article class="feature">
-            <p class="feature-num">01 / Fast Logging</p>
-            <span class="feature-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M5 12h14M12 5v14" />
-              </svg>
-            </span>
-            <h3>Three taps to a working set.</h3>
-            <p>The quick-adjust row trades typing for tapping. Weight, reps, done - the keyboard never appears. Logging engineered to disappear so you can keep training.</p>
-          </article>
-
-          <article class="feature">
-            <p class="feature-num">02 / Personal Records</p>
-            <span class="feature-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 2l2.39 4.84L20 7.6l-4 3.9.94 5.5L12 14.77l-4.94 2.6.94-5.5-4-3.9 5.61-.76L12 2z" />
-              </svg>
-            </span>
-            <h3>PRs the app finds for you.</h3>
-            <p>Every set is checked against your history. New records surface automatically with a quiet badge - no chasing leaderboards, no shouting confetti.</p>
-          </article>
-
-          <article class="feature">
-            <p class="feature-num">03 / Muscle Coverage</p>
-            <span class="feature-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="9" />
-                <path d="M12 3v18M3 12h18" />
-              </svg>
-            </span>
-            <h3>See the gaps in your week.</h3>
-            <p>A split-aware coverage engine maps each set to the muscle regions it actually trains - upper chest, posterior delts, long-head triceps. Imbalances stop hiding.</p>
-          </article>
-
-          <article class="feature">
-            <p class="feature-num">04 / Progression Trends</p>
-            <span class="feature-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M3 17l6-6 4 4 8-8" />
-                <path d="M14 7h7v7" />
-              </svg>
-            </span>
-            <h3>The line that pays off.</h3>
-            <p>Per-exercise dual-axis charts plot weight against volume across weeks and months. Less guessing what to do next. More evidence that the work is working.</p>
-          </article>
-
-          <article class="feature">
-            <p class="feature-num">05 / Local-First</p>
-            <span class="feature-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="3" y="11" width="18" height="10" rx="2" />
-                <path d="M7 11V7a5 5 0 0 1 10 0v4" />
-              </svg>
-            </span>
-            <h3>Your data stays yours.</h3>
-            <p>The app runs entirely on-device by default. Optional iCloud sync via Sign in with Apple - no servers we own, no analytics on your sets, no tracking ever.</p>
-          </article>
-
-          <article class="feature">
-            <p class="feature-num">06 / Health Integration</p>
-            <span class="feature-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
-              </svg>
-            </span>
-            <h3>Fits the rest of your stack.</h3>
-            <p>Optional writes to Apple Health. Live Activity on the lock screen and Dynamic Island during workouts. Quiet integration, never noisy.</p>
-          </article>
-        </div>
-
-        <blockquote class="pullquote">
-          &ldquo;Logging a set is so fast it disappears.&rdquo;
-          <cite class="pullquote-cite">- Design philosophy, internal</cite>
-        </blockquote>
-
-        <div class="teaser">
-          <div>
-            <p class="teaser-label">DesignKit - the system underneath.</p>
-            <p class="teaser-hint">Tokens, themeable components, and a 35-preset catalog. Built once, shared across the ecosystem.</p>
-          </div>
-          <a class="btn ghost" href="designkit.html">See it in action &rarr;</a>
-        </div>
-
-      </section>
-
-      <div class="screenshot-carousel" aria-label="App screenshots">
-        <button class="carousel-btn" data-dir="prev" type="button" aria-label="Previous screenshot">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M15 6l-6 6 6 6" />
-          </svg>
-        </button>
-        <button class="carousel-btn" data-dir="next" type="button" aria-label="Next screenshot">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M9 6l6 6-6 6" />
-          </svg>
-        </button>
-        <div class="carousel-track">
-          <img src="assets/images/screenshots/workout-logger.png" alt="Workout Logger - live Push session with set progress" />
-          <img src="assets/images/screenshots/set-detail.png" alt="Set Detail - Set Logger with plate visualization and warm-up tag" />
-          <img src="assets/images/screenshots/muscle-coverage.png" alt="Muscle Coverage - weekly group sets vs MV landmark" />
-          <img src="assets/images/screenshots/pr-history.png" alt="PR History - post-workout summary with personal best badge" />
-          <img src="assets/images/screenshots/progression-chart.png" alt="Progression Chart - Bench Press weight and reps trend" />
-          <img src="assets/images/screenshots/history.png" alt="History - monthly calendar of completed sessions" />
-          <img src="assets/images/screenshots/split-editor.png" alt="Split Editor - routines list with exercise counts" />
-          <img src="assets/images/screenshots/settings-themes.jpg" alt="Settings Themes - preset catalog across Classic, Sweet, and Bright families" loading="lazy" />
-        </div>
-      </div>
-    </main>
-
-    <footer class="footer" role="contentinfo">
-      <div>
-        &copy; <span data-cfg="copyrightYear">2026</span>
-        <span data-cfg="copyrightHolder">Lauterstar</span>
-      </div>
-
-      <ul class="footer-links">
-        <li><a href="privacy.html">Privacy</a></li>
-        <li><a href="terms.html">Terms</a></li>
-        <li><a href="support.html">Support</a></li>
-        <li><a href="press.html">Press</a></li>
-      </ul>
-    </footer>
-  </div>
-</body>
-</html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stack Gym Tracker | Less tapping. More time lifting.</title>
+<meta name="description" content="Spend less time logging and see your lifting progress. Start your workout log free. Add Stack Pro for next-set targets, plate calculations and Lock Screen logging.">
+<link rel="canonical" href="https://stack.lauterstar.com/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta property="og:site_name" content="Stack">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Stack Gym Tracker | Less tapping. More time lifting.">
+<meta property="og:description" content="Spend less time logging and see your lifting progress. Start your workout log free. Add Stack Pro for next-set targets, plate calculations and Lock Screen logging.">
+<meta property="og:url" content="https://stack.lauterstar.com/">
+<meta property="og:image" content="https://stack.lauterstar.com/assets/images/icon-1024.png">
+<meta property="og:image:alt" content="Stack's stacked weight plate icon">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Stack Gym Tracker | Less tapping. More time lifting.">
+<meta name="twitter:description" content="Spend less time logging and see your lifting progress. Start your workout log free. Add Stack Pro for next-set targets, plate calculations and Lock Screen logging.">
+<meta name="twitter:image" content="https://stack.lauterstar.com/assets/images/icon-1024.png">
+<link rel="icon" href="assets/images/icon-1024.png">
+<link rel="apple-touch-icon" href="assets/images/icon-1024.png">
+<link rel="stylesheet" href="assets/styles.css">
+<script defer src="assets/config.js"></script>
+<script defer src="assets/app.js"></script>
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebPage", "name": "Stack Gym Tracker | Less tapping. More time lifting.", "description": "Spend less time logging and see your lifting progress. Start your workout log free. Add Stack Pro for next-set targets, plate calculations and Lock Screen logging.", "url": "https://stack.lauterstar.com/", "isPartOf": {"@id": "https://stack.lauterstar.com/#website"}, "about": {"@id": "https://stack.lauterstar.com/#app"}, "inLanguage": "en-US"}, {"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://stack.lauterstar.com/#org", "name": "Lauterstar Technologies, Inc.", "url": "https://lauterstar.com/", "logo": "https://stack.lauterstar.com/assets/images/icon-1024.png"}, {"@type": "WebSite", "@id": "https://stack.lauterstar.com/#website", "name": "Stack", "url": "https://stack.lauterstar.com/", "publisher": {"@id": "https://stack.lauterstar.com/#org"}}, {"@type": "MobileApplication", "@id": "https://stack.lauterstar.com/#app", "name": "Stack - Gym Tracker", "applicationCategory": "HealthApplication", "operatingSystem": "iOS 26.2 or later; iPadOS 26.2 or later", "softwareVersion": "2.0.0", "url": "https://stack.lauterstar.com/", "downloadUrl": "https://apps.apple.com/us/app/stack-gym-tracker/id6760980211", "image": "https://stack.lauterstar.com/assets/images/icon-1024.png", "publisher": {"@id": "https://stack.lauterstar.com/#org"}, "description": "Spend less time logging and see your lifting progress. Stack helps you keep routines ready, record sets and build on your last workout. Free workout logging with optional Stack Pro purchases.", "featureList": ["Free workout logging, routines and history", "Basic strength trends and muscle map", "Optional Pro next-set targets and plate calculations", "Optional Pro Lock Screen logging on iPhone", "Optional Pro weekly target reviews and routine adjustments"]}]}]</script>
+</head><body><!-- THESIS: Sell a better training session, then show the real app that makes it possible.
+OWN-WORLD: Cream and charcoal, Forest accents, the approved plate mark, system type and honest native screenshots.
+STORY: Less logging friction, visible progress, an optional next step with Pro, then download.
+FIRST VIEWPORT: A large outcome-led headline and download action beside the real workout screen.
+FORM: A product story with alternating proof and short copy. Existing brand, code-led implementation.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance -->
+<a class="skip-link" href="#main-content">Skip to content</a>
+<div class="container">
+<header class="site-header"><a class="brand" href="index.html" aria-label="Stack home"><img src="assets/images/icon-1024.png" width="40" height="40" alt=""><span>Stack</span></a>
+<nav aria-label="Main navigation"><a href="index.html#why-stack">Why Stack</a><a href="pro.html">Stack Pro</a><a href="designkit.html">Make it yours</a><a href="support.html">Support</a>
+</nav><a class="button primary" href="https://apps.apple.com/us/app/stack-gym-tracker/id6760980211" data-cfg="appStoreUrl">Download Stack<span aria-hidden="true"> ↗</span></a>
+</header>
+<main id="main-content" class="marketing">
+<section class="hero">
+<div class="hero-copy">
+<h1>Less tapping.<br><span>More time lifting.</span>
+</h1>
+<p class="lead">Walk in with a plan. Keep your last set close. Leave knowing what you did better.</p>
+<p>Stack is your gym workout log for iPhone and iPad. Build a record you can keep building on.</p>
+<div class="actions"><a class="button primary" href="https://apps.apple.com/us/app/stack-gym-tracker/id6760980211" data-cfg="appStoreUrl">Download Stack<span aria-hidden="true"> ↗</span></a><a class="text-link" href="#why-stack">See how it helps ↓</a>
+</div>
+<p class="fine">Workout logging is free. Stack Pro is optional. No account needed to start.</p>
+</div>
+<div class="hero-proof">
+<figure class="app-shot"><img src="assets/images/screenshots/logger.png" width="1206" height="2622" alt="Stack workout screen with the previous set beside weight and rep controls" fetchpriority="high" decoding="async"><figcaption>Real Stack 2.0 screen. Next-set targets shown with Pro.</figcaption>
+</figure>
+</div>
+</section>
+<section class="benefit-strip" aria-label="What you get">
+<p>Remember your last session.</p>
+<p>See your progress.</p>
+<p>Give your next set a direction.</p>
+</section>
+<section id="why-stack" class="story">
+<div class="story-copy">
+<h2>Pick up where<br>you left off.</h2>
+<p class="lead">Your last session should help your next one.</p>
+<p>Keep your routines ready and your previous weights and reps close. Log a set, check your rest and stay with your workout.</p>
+<p class="included">Routines, logging and workout history are free.</p>
+</div>
+<figure class="app-shot"><img src="assets/images/screenshots/plan.png" width="1206" height="2622" alt="Stack routines with exercise counts and scheduled training days" loading="lazy" decoding="async"><figcaption>Plan your week around the way you train.</figcaption>
+</figure>
+</section>
+<section class="story reverse">
+<div class="story-copy">
+<h2>See what your<br>work adds up to.</h2>
+<p class="lead">A better set. A new record. A month you can look back on.</p>
+<p>Follow your strength over time and revisit the sessions behind it. The muscle map shows where your logged work went, so your training is easier to understand.</p>
+<p class="included">Basic strength trends and the muscle map are free.</p>
+</div>
+<figure class="app-shot"><img src="assets/images/screenshots/strength.png" width="1206" height="2622" alt="Stack strength view showing lifting history and strength trends" loading="lazy" decoding="async"><figcaption>Example training data shown throughout this site.</figcaption>
+</figure>
+</section>
+<section class="pro-intro">
+<div>
+<h2>Make the next<br>set count.</h2>
+<p class="lead">Stack Pro adds a little direction to the work you already do.</p>
+<p>Get a suggested weight and rep target from your logged sets. See which plates to load. Review a gap in your planned week and preview a routine change before you save it.</p><a class="button primary" href="pro.html">See what Pro adds <span aria-hidden="true">→</span></a>
+</div>
+<div class="pro-points">
+<h3>Less guesswork between sets.</h3>
+<ul>
+<li>A target for your next set</li>
+<li>The plates to put on each side</li>
+<li>A practical next step for your weekly plan</li>
+<li>Logging that stays with you on your Lock Screen</li>
+</ul>
+<p>Monthly, yearly or lifetime access. Compare all three in the app before buying.</p>
+</div>
+</section>
+<section class="story">
+<div class="story-copy">
+<h2>Keep your phone<br>out of the workout.</h2>
+<p class="lead">Rest. Repeat your set. Keep moving.</p>
+<p>With Pro, check your rest and repeat your previous set from your iPhone Lock Screen or Dynamic Island without reopening Stack.</p><a class="text-link" href="pro.html#keep-moving">Take a closer look →</a>
+</div>
+<figure class="app-shot"><img src="assets/images/screenshots/lock-screen.png" width="1179" height="2556" alt="Real iPhone Lock Screen showing Stack rest complete and Repeat 140 by 6 controls" loading="lazy" decoding="async"><figcaption>Stack Pro. Available on compatible iPhones.</figcaption>
+</figure>
+</section>
+<section class="personal-teaser">
+<h2>Your training.<br>Your kind of app.</h2>
+<div>
+<p>Start with a classic look. Go softer, darker or bolder with Pro. Keep the same familiar workout controls in colors that feel like you.</p><a class="text-link" href="designkit.html">Make it yours →</a>
+</div>
+</section>
+<section class="faq" aria-labelledby="faq-title">
+<h2 id="faq-title">Before your first set.</h2>
+<details><summary>What can I use for free?</summary>
+<p>Log workouts, build routines, review your history, see basic strength trends and explore the muscle map. Export and import your training data. Stack Pro adds optional training and appearance tools.</p>
+</details>
+<details><summary>What does Stack Pro add?</summary>
+<p>Pro helps you choose your next set with Smart Targets, load the bar with plate calculations and repeat a set from your iPhone Lock Screen. It also adds weekly coverage targets and plan adjustments, progress photos, guided one-rep max tests, Gym Mode, exercise replacement suggestions and more themes.</p>
+</details>
+<details><summary>Do I need an account or internet at the gym?</summary>
+<p>No account is required to log workouts, and your workout log works offline. Optional iCloud sync uses Sign in with Apple. Buying or restoring Pro requires access to the App Store.</p>
+</details>
+<details><summary>Does Stack collect analytics?</summary>
+<p>Optional usage analytics and crash reports are on by default. You can turn either off in Profile → Privacy & Data. Stack has no ads and does not sell your training data. The privacy policy explains what these optional reports include.</p>
+</details>
+<details><summary>Can I use Stack on iPad?</summary>
+<p>Yes. Stack 2.0 supports iPhone and iPad running iOS or iPadOS 26.2 or later. Lock Screen logging and Dynamic Island features are for compatible iPhones.</p>
+</details>
+<p><a href="support.html">More help with Stack</a> · <a href="privacy.html">Read the privacy policy</a>
+</p>
+</section>
+<section class="closing">
+<h2>Your next workout.<br>A little less guesswork.</h2>
+<p>Start logging free. Add Pro when you want more direction.</p><a class="button primary" href="https://apps.apple.com/us/app/stack-gym-tracker/id6760980211" data-cfg="appStoreUrl">Download Stack<span aria-hidden="true"> ↗</span></a>
+<p class="fine">For iPhone and iPad. Optional in-app purchases.</p>
+</section>
+</main>
+<footer class="site-footer">
+<div class="footer-brand"><a class="brand" href="index.html">Stack</a>
+<p>Build a record of getting stronger.</p><small>© 2026 Lauterstar Technologies, Inc.</small>
+</div>
+<nav aria-label="More about Stack"><a href="about.html">About Stack</a><a href="updates.html">Updates</a><a href="press.html">Press</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a>
+</nav>
+</footer>
+</div></body></html>

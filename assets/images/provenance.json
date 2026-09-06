@@ -1,0 +1,92 @@
+[
+  {
+    "path": "assets/images/icon-1024.png",
+    "sha256": "ac8cc93087f485b963f494ffadb2d23ec1b96b11b9b093a9b1dcfcc380310d3b",
+    "dimensions": [
+      1024,
+      1024
+    ],
+    "origin": "FitnessTracker approved icon master"
+  },
+  {
+    "path": "assets/images/screenshots/logger.png",
+    "sha256": "41a7b043378d217ad67614a305978a02f560bcc3d93abbd6ef4b31050c12293b",
+    "dimensions": [
+      1206,
+      2622
+    ],
+    "origin": "FitnessTracker/Marketing/AppStore-2.0/raw/iphone/logger.png"
+  },
+  {
+    "path": "assets/images/screenshots/plan.png",
+    "sha256": "c30089465fc9ecb780b8cf351de13ea21ae3c542b112feada4d3e5bc0c3e129b",
+    "dimensions": [
+      1206,
+      2622
+    ],
+    "origin": "FitnessTracker/Marketing/AppStore-2.0/raw/iphone/plan.png"
+  },
+  {
+    "path": "assets/images/screenshots/strength.png",
+    "sha256": "dde05046bec564e9fef891605fb1609bf4d7e088f44c2f09adc57d234d15a627",
+    "dimensions": [
+      1206,
+      2622
+    ],
+    "origin": "FitnessTracker/Marketing/AppStore-2.0/raw/iphone/strength.png"
+  },
+  {
+    "path": "assets/images/screenshots/plates.png",
+    "sha256": "0cdd7a3acd1f528c6246e28e883f0873b19ee4a86dc267d75c3d543ea675045e",
+    "dimensions": [
+      1206,
+      2622
+    ],
+    "origin": "FitnessTracker/Marketing/AppStore-2.0/raw/iphone/plates.png"
+  },
+  {
+    "path": "assets/images/screenshots/adjustment.png",
+    "sha256": "838458d1e0cd92f0dda82e1c951293ebf535c97ffe1621b9ceadcbc5636298e4",
+    "dimensions": [
+      1206,
+      2622
+    ],
+    "origin": "FitnessTracker/Marketing/AppStore-2.0/raw/iphone/adjustment.png"
+  },
+  {
+    "path": "assets/images/screenshots/lock-screen.png",
+    "sha256": "04a4070f4d4795685404ff41a54ad5850b5e5728340690b0cb281492cbeb75cd",
+    "dimensions": [
+      1179,
+      2556
+    ],
+    "origin": "FitnessTracker/Marketing/AppStore-2.0/raw/iphone/lock-screen.png"
+  },
+  {
+    "path": "assets/images/screenshots/home.png",
+    "sha256": "1ef708d38f4cd4aca45d3a9987e553b691f621e7b1755b60c93f69d70009e673",
+    "dimensions": [
+      1206,
+      2622
+    ],
+    "origin": "FitnessTracker/Marketing/AppStore-2.0/raw/iphone/home.png"
+  },
+  {
+    "path": "assets/images/screenshots/theme-dracula.png",
+    "sha256": "5861649f1a35606bbeecb1cb3ad1f6374d1cfcdf0d5a0b619da5d368f74a0897",
+    "dimensions": [
+      1206,
+      2622
+    ],
+    "origin": "FitnessTracker/Marketing/AppStore-2.0/raw/iphone/theme-dracula.png"
+  },
+  {
+    "path": "assets/images/screenshots/theme-barbie.png",
+    "sha256": "61477fff29a54f359ee8aa0e132e06ab6dff686ab4c19885be1ce9c3b7837559",
+    "dimensions": [
+      1206,
+      2622
+    ],
+    "origin": "FitnessTracker/Marketing/AppStore-2.0/raw/iphone/theme-barbie.png"
+  }
+]
