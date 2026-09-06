@@ -88,3 +88,7 @@ Buttons and grouped surfaces share the standard radius. App screenshot corners u
 - **Don't** invent testimonials, ratings, prices or promised training results.
 - **Don't** tint app screenshots or replace them with imagined interfaces.
 - **Don't** add a framework, build dependency or downloaded font for this static site.
+
+## App Store and company links
+
+All download actions use the existing official black App Store badge, with its original artwork and proportions. Standard buttons remain for internal page actions. Each footer links to More apps from Lauterstar.

@@ -1,3 +1,9 @@
+# Release presentation follow-up - September 6, 2026
+
+- Replaced download buttons with the official black App Store badge across the site. Shared link configuration preserves image-only link content.
+- Added the 2.0 release entry as current-release copy and removed preparation labels from public policy pages. Publication remains coordinated with the app release.
+- Added More apps from Lauterstar to every footer.
+
 # 2.0 website preparation - September 6, 2026
 
 - Reworked the site around less time logging, visible progress and a clearer next workout, with actual Stack 2.0 screenshots and the new plate icon.

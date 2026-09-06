@@ -35,8 +35,8 @@ External references:
 
 ## Coordinated publication
 
-1. Release Stack 2.0 and its new ASC metadata together with this site. Keep the historical 1.x updates intact; add the actual 2.0 release date when known.
-2. Approve the material policy changes above. Remove the Prepared for Stack 2.0 label from legal pages and set their actual effective date at publication.
+1. Release Stack 2.0 and its new ASC metadata together with this site. The 2.0 entry is already written as the current release above the historical 1.x notes, dated September 6, 2026. Gabe approved preparing current-release copy now and adjusting the date later if needed.
+2. Approve the material policy changes above. Legal pages already use current policy language with no draft banner; their date is September 6, 2026. Align it with publication if needed.
 3. Check that the live App Store product terms match the Pro page. No numeric prices or Family Sharing promises are baked into this site.
 4. Update the Stack entry and related metadata in the separate LauterstarWebsite repo. Suggested copy: Spend less time logging and see your lifting progress. Free workout logging for iPhone and iPad, with optional Stack Pro for more direction between sets. That external site is another source in Gabe's supplied AI result.
 5. Publish this branch through the existing host, then check live URLs, metadata and sitemap. Request recrawling through an authenticated Search Console account if available. Search snippets and AI answers can still be rewritten by the provider and may take time to change.

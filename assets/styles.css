@@ -56,6 +56,12 @@ h3 { font-size: 1.45rem; letter-spacing: -.02em; }
 .button.primary { color: var(--on-accent); background: var(--accent); }
 .button.primary:hover { background: var(--accent-hover); }
 .button.secondary { border-color: var(--line); }
+/* Use Apple's supplied badge unchanged, including its own border and lettering. */
+.app-store-link { display: inline-block; flex-shrink: 0; width: 180px; line-height: 0; }
+.app-store-link img { width: 100%; height: auto; }
+.site-header > .app-store-link { width: 144px; }
+.latest-release { padding-bottom: var(--space-l); margin-bottom: var(--space-xl); border-bottom: 1px solid var(--line); }
+.latest-release h2 { margin-top: var(--space-m); }
 .actions { display: flex; align-items: center; flex-wrap: wrap; gap: var(--space-l); margin: var(--space-xl) 0 var(--space-m); }
 .text-link { font-weight: 600; display: inline-block; padding: var(--space-s) 0; }
 .fine, small, figcaption { font-size: .82rem; line-height: 1.55; color: var(--muted); }
