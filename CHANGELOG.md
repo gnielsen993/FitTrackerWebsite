@@ -107,3 +107,5 @@ A running log of meaningful changes to the Stack website. The iOS app's own rele
 - `assets/theme-demo.js` - vanilla JS theme switcher scoped to the DesignKit demo card only.
 - `assets/images/icon-1024.png` - copied from the FitnessTracker app icon set.
 - AI agent conventions (`CLAUDE.md`, `AGENTS.md`) and project README.
+
+- 2026-09-06: Updated current privacy, support, home and press copy for explicit reporting consent, reduced analytics payloads and complete local training-data erasure.
