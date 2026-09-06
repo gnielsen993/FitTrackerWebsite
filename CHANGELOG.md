@@ -1,3 +1,10 @@
+# Layout refactor - September 6, 2026
+
+- Put readable set controls and the App Store badge in the first mobile screen.
+- Replaced tall phone repetitions with unchanged screenshot details on Home and Pro, with full-image viewing and keyboard support.
+- Explained Pro through the last set, suggested target and the user's decision.
+- Fixed narrow-screen wrapping with enlarged text. Verified 40 page/viewport/appearance combinations, all eight screenshot links, keyboard close/focus, no-JavaScript content and original asset hashes.
+
 # Release presentation follow-up - September 6, 2026
 
 - Replaced download buttons with the official black App Store badge across the site. Shared link configuration preserves image-only link content.

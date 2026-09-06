@@ -49,3 +49,7 @@ External references:
 - All newly used screenshot and icon files match their recorded SHA-256 values. Native dimensions are set on images to reserve layout space.
 - Independent finish reviewer: ship, no material visual fixes. Sampled text and button contrast pairs meet 4.5:1. The mechanical design detector ran in degraded regex mode, so it did not establish computed contrast coverage.
 - Legal copy is prepared for owner review, not certified. No public site, ASC entry or companion website has been changed by this branch.
+
+## Layout follow-up verification
+
+The Home and Pro screenshot-detail refactor passed 40 browser page/viewport/appearance checks, all eight full-image links, keyboard focus and dismissal, narrow-screen enlarged text, and original-image hash checks. The first mobile viewport includes actual logging controls and the download badge. Independent visual review returned ship. Publication remains coordinated with app 2.0.

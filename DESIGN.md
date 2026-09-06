@@ -57,7 +57,7 @@ Headings use tight tracking, balanced wrapping and a 1.08 line height. Desktop d
 
 ## Layout
 
-A centered container caps at 1160px with 24px side padding. Hero and story sections pair short copy with a single app screenshot. Alternating desktop stories keep a steady reading rhythm; focused document pages use narrower reading widths.
+A centered container caps at 1160px with 24px side padding. The homepage leads with a large logger detail. Compact routine proof, a wider chart, the Pro decision sequence and a Live Activity detail vary the reading rhythm. Pro uses the same detail system. Focused document pages use narrower reading widths.
 
 At 920px the header wraps and the section gaps tighten. At 600px the hero, stories, Pro panel, personalisation preview and plan choices become single columns. Mobile copy comes before its proof. Section spacing becomes 64px and the largest regular spacing becomes 48px. Screenshots retain their original proportions at every width.
 
@@ -67,7 +67,7 @@ The system has no box shadows. Tonal surfaces, whitespace and thin borders defin
 
 ## Shapes
 
-Buttons and grouped surfaces share the standard radius. App screenshot corners use the phone radius, reduced to 28px on mobile. The plate icon keeps its established artwork. Full images remain readable without reconstruction or recoloring.
+Buttons and grouped surfaces share the standard radius. App screenshot corners use the phone radius, reduced to 28px on mobile. The plate icon keeps its established artwork. Screenshot details use CSS clipping and uniform scaling. Each opens the unchanged full image; source artwork is never reconstructed or recolored.
 
 ## Components
 
@@ -92,3 +92,7 @@ Buttons and grouped surfaces share the standard radius. App screenshot corners u
 ## App Store and company links
 
 All download actions use the existing official black App Store badge, with its original artwork and proportions. Standard buttons remain for internal page actions. Each footer links to More apps from Lauterstar.
+
+## Screenshot viewing
+
+Detail links open a native dialog with a sticky Close control. Escape dismisses it and focus returns to the opening link. Keyboard focus stays on the sole dialog control. Direct image links work without JavaScript. Mobile headings, navigation and footer links wrap at enlarged text sizes.
