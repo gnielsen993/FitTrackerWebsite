@@ -1,3 +1,8 @@
+## Unreleased
+
+- Updated the app version to 2.0.1 and added the short bug-fix release note. Marketing copy and artwork are unchanged.
+- Coordinated with FitnessTracker `Docs/releases/v2.0.1.md`.
+
 # Purchase support - September 6, 2026
 
 - Added a direct answer about optional Pro and eligible early-user access.
