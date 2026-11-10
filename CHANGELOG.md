@@ -1,5 +1,9 @@
 ## Unreleased
 
+- Prepared 2.0.2 release notes covering remembered exercise history, dated previous sets, first-working-set defaults, numbered sets and a stationary number pad.
+- Updated the release-branch app version and homepage structured data to 2.0.2. Publish this branch only after the App Store release is confirmed; no public release date is asserted.
+- Coordinated with FitnessTracker `Docs/releases/v2.0.2.md`. This patch keeps the existing marketing copy and artwork.
+
 - Updated the app version to 2.0.1 and added the short bug-fix release note. Marketing copy and artwork are unchanged.
 - Coordinated with FitnessTracker `Docs/releases/v2.0.1.md`.
 
